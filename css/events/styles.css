@@ -1,0 +1,48 @@
+/* --- Thanh điều hướng --- */
+nav {
+    border-bottom: 1px lightgrey solid;
+}
+
+.breadcrumbs {
+    padding: 1rem;
+    width: 65%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.breadcrumb_item a {
+    display: inline-block;
+    color: grey;
+}
+
+.breadcrumb_item::before {
+    content: '>';
+    margin: 1rem;
+    color: gray;
+}
+
+.breadcrumb_item:first-child::before {
+    content: none;
+}
+
+.breadcrumb_item:first-child {
+    content: none;
+}
+
+.breadcrumb_item a:hover {
+    color: black;
+    transform: translate(0, -2px);
+}
+
+@media only screen and (max-width: 768px) {
+    .breadcrumbs {
+        width: 100%;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .breadcrumb_item:first-child a {
+        margin-left: 3rem;
+    }
+}

@@ -1,0 +1,235 @@
+/* --- Thanh điều hướng --- */
+.breadcrumbs {
+    width: 90%;
+}
+/* Thuyết phục tuyển dụng */
+#question{
+    width: 91%;
+    font-size: 6vw;
+    margin-top: 5vw;
+    text-align: center;
+}
+#why {    
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20vw;
+}
+#why>div:first-child{
+    font-size: 5vw;
+}
+#why>div:nth-child(2){
+    display: block;
+}
+#Center{
+    text-align: initial;
+}
+.Reasons{
+    display: block;
+}
+/* Mục ở giữa */
+#Center>div:first-child{
+    display: none;
+}
+#centerReasons>div:first-child{
+    font-size: 6vw;
+    border-radius: 5vw 5vw 0 0;
+    padding: 3vw;
+    margin: 4vw 0 0 1vw;
+}
+#centerReasons>div>div{
+    font-size: 6vw;
+    font-weight: bold;
+    background-color: initial;
+    width: 90%;
+    margin: 1vw auto;
+    border-radius: 3vw;
+    padding: 1vw;
+    margin: 4vw 0 0 1vw;
+}
+#centerReasons>div>div:hover>p{
+    font-size: 5vw;
+    border-top: 0.5vw solid black;
+    animation: showText12 0s;
+}
+#centerReasons>div>div>p{
+    font-weight: initial;
+    display: block;
+    font-size: 4vw;
+    margin-top: 1vw;
+    border-top: 0.5vw solid black;
+    
+}
+/* Mục lý do */
+#leftReasons, #rightReasons{
+    height: max-content;
+}
+#leftReasons>div:first-child,
+#rightReasons>div:first-child{
+    background-color: rgb(109, 109, 206);
+    color:white;
+    height: fit-content;
+    width: 80%;
+    font-weight: bold;
+    font-size: 6vw;
+    border-radius: 5vw 5vw 0 0;
+    padding: 3vw;
+    margin: 10vw 0 0 1vw;    
+}
+#leftReasons>div:last-child,
+#rightReasons>div:last-child{
+    width: 100%;
+    background-color: initial;
+    color:black;
+}
+#leftReasons>div>div,
+#rightReasons>div>div{
+    font-size: 6vw;
+    font-weight: bold;
+    background-color: initial;
+    width: 90%;
+    margin: 1vw auto;
+    border-radius: 3vw;
+    padding: 1vw;
+    margin: 4vw 0 0 1vw;
+}
+#leftReasons>div>div:hover>p,
+#rightReasons>div>div:hover>p{
+    font-size: 3vw;
+    border-top: 0.5vw solid black;
+    animation: showText12 0s;
+}
+#leftReasons>div>div>p,
+#rightReasons>div>div>p{
+    font-weight: initial;
+    display: block;
+    font-size: 4vw;
+    margin-top: 2vw;
+    border-top: 0.5vw solid black;
+    
+}
+/* Tìm vị trí */
+.search{
+    height: 120vw;
+    border-radius: 20px 10px 0 0;
+}
+.search>div:first-child{
+    margin-top: 10vw;
+    width: 100%;
+}
+.search>div>div{
+    display: block;
+}
+
+.search>div:first-child>p{
+    font-size: 4.5vw;
+    line-height: 5.5vw;
+}
+.search>div:first-child>div,
+.search>div:first-child>div>div{
+    width: 90%;
+    margin: 5vw auto;
+}
+.search>div:first-child>div>div>i{
+    color:white;
+    font-size: 5vw;
+}
+.search>div:first-child>div>div>input{
+    width: 100%;
+    border-radius: 1vw;
+    font-size: 4vw;
+}
+.search>div:last-child{
+    display: none;
+}
+@keyframes showText12{
+    from{font-size: 1.2vw;}
+    to{font-size: 1.2vw;}
+}
+/* Các vị trí */
+.positions{
+    width: 95%;
+    background-color: aliceblue;
+    margin: 3vw auto;
+}
+.positions>.position{
+    /* border: 0.2vw solid black; */
+    width: 48%;
+    height: 75vw;
+    font-size: 4vw;
+    padding: 3vw;
+    margin-top: 5vw;
+}
+.positions>.position:hover{
+    transform: scale(1);
+}
+.positions .posTit{
+    color:darkblue;
+    font-weight: bold;
+    font-size: 5vw;
+}
+.positions .posDes{
+    display: none;
+}
+/* Nút ứng tuyển */
+.position a{
+    font-size: 5vw;
+}
+/* nút xem thêm */
+.positions>#xemThem{
+    width: 15vw;
+    padding: 3vw 1.3vw;
+    font-size: 5vw;
+    border-radius: 5vw;
+}
+/* Phần ghi thông tin */
+.submit{
+    display: block;
+    height: max-content;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+.submit>div:nth-child(1){
+    padding: 6vw;
+}
+.submit>div:nth-child(1)>div:first-child{
+    font-size: 7vw;
+    color: darkblue;
+    font-weight: bold;
+}
+.submit>div:nth-child(2){
+    padding: 5vw;
+    width: 100%;
+    height: 120vw;
+    font-size: 5vw;
+    box-sizing: border-box;
+}
+.submit input {
+    width: 100%;
+    padding: 2vw;
+    font-size: 5vw;
+    border-radius: 5vw;
+}
+.submit>div>a{
+    bottom: 8vw;
+    left:5vw;
+}
+.submit>div>button{
+    bottom: 8vw;
+    right:10vw;
+    width: 15vw;
+    height: 12vw;
+    font-size: 8vw;
+    text-align: center;
+}
+.displayNone{
+    display: none;
+}
+.hidden{
+    visibility: initial;
+}
+.useForPC{
+    display: none;
+}
+.useForMobile{
+    display: block;
+}

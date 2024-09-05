@@ -1,0 +1,170 @@
+/* --- Thanh điều hướng --- */
+.breadcrumbs {
+    width: 100%;
+    padding: 1rem;
+}
+/* Hiện ảnh ra toàn màn hình */
+.showImgRewards>div:first-child{
+    top:7%;
+    right:10%;
+    font-size: 10vw;
+}
+.showImgRewards>div:last-child{
+    width: 80%;
+    top:15%;
+    left: 10%;
+}
+/* header */
+.header{
+    height: 140vw;
+    margin-bottom: 10vw;
+}
+.header>div{
+    font-size: 14vw;
+    top:28%;
+}
+.headerImg {
+    display: none;
+}
+.altHeaderImg {
+    display: initial;
+}
+/* section */
+/* Tiêu đề của section */
+section>div:first-child{
+    font-size: 8vw;
+}
+/* Đoạn văn thông tin của section */
+section>p:nth-child(2){
+    font-size: 6vw;
+    line-height: 8vw;
+}
+/* Tầm nhìn và sứ mệnh */
+.TamNhin_SuMenh{
+    height:100vw;
+    margin-bottom:28vw;
+}
+#contentTamNhin_SuMenh{
+    width: 100%;
+    height: 100%;
+}
+.blackShadow{
+    height: 65%;
+}
+.blackShadow>div{
+    top:0vw;
+    width: 40%;
+    left: 30%;
+    font-size: 7vw;
+}
+.blackShadow>p{
+    font-size: 4vw;
+    line-height: 5vw;
+    bottom:2vw;
+}
+/* nút chuyển */
+.switch{
+    font-size: 5vw;
+}
+/* Các giá trị cốt lõi */
+.values{
+    position: initial;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+}
+#centralCircle{
+    display: none;
+}
+.value{
+    width: 100%;
+    border-radius: 5vw 5vw 0 0;
+    font-size: 5vw;
+    transition: initial;
+    position: initial;
+    margin: 5vw 0;
+    display: block;
+    background-color: initial;
+    color: darkblue;
+    border: 0.5vw solid darkblue ;
+}
+.value:hover{
+    background-color: initial;
+    transform: scale(1);
+}
+
+.contentOfValue{
+    position: initial;
+    width: 100%;
+    font-size: 5vw;
+    display: block;
+    background-color: initial;
+    color: initial;
+}
+@keyframes svc{
+    from{font-size: 5vw;}
+    to{font-size: 5vw;} 
+}
+#value1 + .contentOfValue{
+    position: initial;
+    text-align: start;
+}
+#value2 + .contentOfValue{
+    position: initial;
+    text-align: start;
+}
+#value3 + .contentOfValue{
+    position: initial;
+    text-align: start;
+}
+#value4 + .contentOfValue{
+    position: initial;
+    text-align: start;
+}
+#value5 + .contentOfValue{
+    position: initial;
+    text-align: start;
+}
+#value6 + .contentOfValue{
+    position: initial;
+    text-align: start;
+}
+/* Thành tựu */
+.NhungThanhTuu>div:nth-child(2)>div{
+    width: 50%;
+    height: 60vw;
+}
+.ThanhTuu>div{
+    top:1vw;
+    width: 96%;
+    left:2%;
+    font-size: 3.5vw;
+}
+.ThemThanhTuu{
+    font-size: 5vw;
+}
+#xemThemButton:hover{
+    color: black;
+}
+/* Quy mô */
+.QuyMo{
+    height: 100vw;
+    margin-bottom:28vw;
+}
+.QuyMo>div:nth-child(2){
+    background-image: none;
+    padding: 3vw;
+} 
+.NhungThongSo{
+    width: 100%;
+}
+.NhungThongSo>div{
+    width: 50%;
+}
+.NhungThongSo>div>div:first-child{
+    font-size: 4vw;
+}
+.NhungThongSo>div>div:last-child{
+    font-size: 9vw;
+}
+

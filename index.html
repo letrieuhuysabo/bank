@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="DHB, Bank, DHB Bank, Thiet ke Web, HTML, CSS, JS">
+    <meta name="author" content="Truong Van Dzung, Le Trieu Huy">
+    <link rel="icon" href="images/icon/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>DHBank</title>
+</head>
+<body>
+    <div class="preloader">
+        <img src="images/icon/logo.png" alt="">
+    </div>
+    <nav>
+        <div class="nav-menu flex">
+            <div class="icon flex">
+                <a href="https://www.freepik.com/"><img src="images/icon/logo.png" alt="Designed by Freepik"></a>
+                <h1><a href="index.html">DHBank</a></h1>
+            </div>
+            <ul class="menu">
+                <li><a href="about-us.html">Về DHB</a></li>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#news">Tin tức</a></li>
+                <li><a href="faq.html">Trợ giúp</a></li>
+                <li><a href="recruit.html">Tuyển dụng</a></li>
+            </ul>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="drop-down menu">
+                    <li><a href="about-us.html">Về DHB</a></li>
+                    <li><a href="#services">Dịch vụ</a></li>
+                    <li><a href="#news">Tin tức</a></li>
+                    <li><a href="faq.html">Trợ giúp</a></li>
+                    <li><a href="recruit.html">Tuyển dụng</a></li>
+                    <li class="drop-down button">  
+                        <div class="button"><a href="login.html">Đăng ký ngay</a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="button"><a href="login.html">Đăng ký ngay</a></div>
+        </div>                                          
+    </nav>
+    <div class="scrollToTop" type="button">
+        <div class="border">
+            <p>&uarr;</p>
+        </div>  
+    </div>    
+    <section class="banner">
+        <div class="slide-container">
+            <ul class="slideshow">
+                <li class="slide slideActive">
+                    <a href="about-us.html">
+                        <img class="image" src="images/banner/about-bg.png" alt="banner1"/>
+                        <img class="alt-image" src="images/banner/phone-about-bg.png" alt="banner1"/>
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="recruit.html">
+                        <img class="image" src="images/banner/about-bg2.png" alt="banner2"/>
+                        <img class="alt-image" src="images/banner/phone-about-bg2.png" alt="banner2"/>
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="event-1.html">
+                        <img class="image" src="images/banner/about-bg3.png" alt="banner3"/>
+                        <img class="alt-image" src="images/banner/phone-about-bg3.png" alt="banner3"/>
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="event-2.html">
+                        <img class="image" src="images/banner/about-bg4.png" alt="banner4"/>
+                        <img class="alt-image" src="images/banner/phone-about-bg4.png" alt="banner4"/>
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="event-3.html">
+                        <img class="image" src="images/banner/about-bg5.png" alt="banner5"/>
+                        <img class="alt-image" src="images/banner/phone-about-bg5.png" alt="banner5"/>
+                    </a>
+                </li>
+            </ul>
+            <div class="slidenav flex">
+                <button id="prev">&#10094;</button>
+                <button id="next">&#10095;</button>
+            </div>
+            <ul class="dots">
+                <li class="dotActive"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <section class="about-services">
+        <div id="services">
+            <h2>Tiện ích và dịch vụ</h2>
+            <p>Khám phá những tính năng giúp bạn thực hiện mọi nhu cầu cuộc sống</p>
+            <div class="wrapper1 flex">
+                <div class="wrapper2 flex">
+                    <div class="item svActive">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Ví của bạn</h3>
+                    </div>
+                    <div class="item">
+                        <i class="fa-regular fa-money-bill-1"></i>
+                        <h3>Chuyển và nhận tiền</h3>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-plane"></i>
+                        <h3>Du lịch & Đi lại</h3>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h3>Nạp đt - Data</h3>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                        <h3>Thanh toán hóa đơn</h3>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h3>Game - Ứng dụng</h3>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-film"></i>
+                        <h3>Mua vé xem phim</h3>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <h3>Tài chính & Bảo hiểm</h3>
+                    </div>
+                </div>
+                <div class="servicesNav">
+                    <button id="svPrev">&#10094;</button>
+                    <button id="svNext">&#10095;</button>
+                </div>
+            </div>
+            <div class="serviceWrapper">
+                <div class="serviceDetail svdActive">
+                    <div class="serviceImage">
+                        <img src="images/serviceImage/serviceImage1.png" alt="service1">
+                    </div>
+                    <div class="serviceText">
+                        <h3>Ví điện tử - Chuyển tiền không cần có mặt</h3>
+                        <ul>
+                            <li>Mở Tài khoản Trực tuyến chỉ trong một phút</li>
+                            <li>An toàn hiệu quả mà không phải đi đâu</li>
+                            <li>Dễ dàng tra cứu thông tin</li>
+                            <li>Chủ động, linh hoạt</li>
+                        </ul>
+                        <div class="button"><a href="login.html">Đăng ký ngay</a></div>
+                    </div>
+                </div>
+                <div class="serviceDetail">
+                    <div class="serviceImage">
+                        <img src="images/serviceImage/serviceImage2.png" alt="service2">
+                    </div>
+                    <div class="serviceText">
+                        <h3>Chuyển tiền đến Ngân hàng</h3>
+                        <ul>
+                            <li>Chuyển tiền siêu tốc 24/7</li>
+                            <li>An toàn - Bảo mật - Tiện lợi</li>
+                            <li>Mạng lưới rộng</li>
+                            <li>Không cần đi xa, xếp hàng</li>
+                        </ul>
+                        <div class="button"><a href="login.html">Đăng ký ngay</a></div>
+                    </div>
+                </div>
+                <div class="serviceDetail">
+                    <div class="serviceImage">
+                        <img src="images/serviceImage/serviceImage3.png" alt="service3">
+                    </div>
+                    <div class="serviceText">
+                        <h3>Du lịch - Đi lại trên DHBank</h3>
+                        <ul>
+                            <li>Giá vé cạnh tranh, ưu đãi hấp dẫn</li>
+                            <li>Linh hoạt tùy chỉnh mọi thứ trong chuyến đi theo ý muốn</li>
+                            <li>Dễ dàng so sánh giá vé, thời gian khởi hành, hãng bay/tàu/xe</li>
+                            <li>Mở Ví, quản lý cả chuyến đi</li>
+                        </ul>
+                        <div class="button"><a href="login.html">Đăng ký ngay</a></div>
+                    </div>
+                </div>
+                <div class="serviceDetail">
+                    <div class="serviceImage">
+                        <img src="images/serviceImage/serviceImage4.png" alt="service4">
+                    </div>
+                    <div class="serviceText">
+                        <h3>Nạp điện thoại, mua SIM</h3>
+                        <ul>
+                            <li>Trải nghiệm nạp điện thoại, mua SIM tiện lợi</li>
+                            <li>Nhận eSIM thần tốc qua Email, kích hoạt dễ dàng</li>
+                            <li>Data 4G tốc độ cao, lướt mạng mượt mà</li>
+                            <li>Nhiều gói cước ưu đãi</li>
+                        </ul>
+                        <div class="button"><a href="login.html">Đăng ký ngay</a></div>
+                    </div>
+                </div>
+                <div class="serviceDetail">
+                    <div class="serviceImage">
+                        <img src="images/serviceImage/serviceImage5.png" alt="service5">
+                    </div>
+                    <div class="serviceText">
+                        <h3>Thanh toán hóa đơn tại DHBank</h3>
+                        <ul>
+                            <li>Thanh toán dễ dàng, nhanh chóng</li>
+                            <li>Hỗ trợ xuất hóa đơn theo yêu cầu</li>
+                            <li>Nạp hộ người thân</li>
+                            <li>An toàn, tiện lợi</li>
+                        </ul>
+                        <div class="button"><a href="login.html">Đăng ký ngay</a></div>
+                    </div>
+                </div>
+                <div class="serviceDetail">
+                    <div class="serviceImage">
+                        <img src="images/serviceImage/serviceImage6.png" alt="service6">
+                    </div>
+                    <div class="serviceText">
+                        <h3>Thanh toán game, ứng dụng</h3>
+                        <ul>
+                            <li>Thanh toán đơn giản, một chạm xong ngay</li>
+                            <li>Nhiều gói dịch vụ, đáp ứng mọi nhu cầu</li>
+                            <li>Đa dạng ưu đãi, giảm giá </li>
+                            <li>Thao tác đơn giản, nhanh chóng</li>
+                        </ul>
+                        <div class="button"><a href="login.html">Đăng ký ngay</a></div>
+                    </div>
+                </div>
+                <div class="serviceDetail">
+                    <div class="serviceImage">
+                        <img src="images/serviceImage/serviceImage7.png" alt="service7">
+                    </div>
+                    <div class="serviceText">
+                        <h3>Đặt vé xem phim trên DHBank</h3>
+                        <ul>
+                            <li>Hỗ trợ hơn 50+ rạp phim</li>
+                            <li>Đặt vé trực tiếp, thanh toán một chạm</li>
+                            <li>Gợi ý những suất chiếu nổi bật nhất</li>
+                            <li>Lịch sử đặt vé được lưu lại</li>
+                        </ul>
+                        <div class="button"><a href="login.html">Đăng ký ngay</a></div>
+                    </div>
+                </div>
+                <div class="serviceDetail">
+                    <div class="serviceImage">
+                        <img src="images/serviceImage/serviceImage8.png" alt="service8">
+                    </div>
+                    <div class="serviceText">
+                        <h3>Cần gì thanh toán, có liền dùng ngay</h3>
+                        <ul>
+                            <li>Không dùng - Không phát sinh phí</li>
+                            <li>Đầu tư dễ dàng, đa dạng giao dịch</li>
+                            <li>Thao tác đơn giản, sử dụng dễ dàng</li>
+                            <li>Luôn nhắc bạn thanh toán đúng hạn</li>
+                        </ul>
+                        <div class="button"><a href="login.html">Đăng ký ngay</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news" id="news">
+            <h2>Tin tức DHBank</h2>
+            <div class="headlineWrapper">
+                <div class="headlineItem">
+                    <div class="headlineDetails">
+                        <a href="#">
+                            <div class="headlineImage">
+                                <img src="images/news/news-1/headline.png" alt="news1">
+                            </div>
+                            <div class="headlineDetail">
+                                <h3>Hàng triệu người có tài khoản ngân hàng lưu ý: Nếu nghi ngờ lộ thông tin, chủ động nhập sai mật khẩu 5 lần để giữ tiền</h3>
+                                <p>01/09/2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="headlineItem">
+                    <div class="headlineDetails">
+                        <a href="#">
+                            <div class="headlineImage">
+                                <img src="images/news/news-2/headline.png" alt="news2">
+                            </div>
+                            <div class="headlineDetail">
+                                <h3>Thị trường vàng liệu có tạm yên sau những ngày biến động mạnh?</h3>
+                                <p>01/09/2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="headlineItem">
+                    <div class="headlineDetails">
+                        <a href="#">
+                            <div class="headlineImage">
+                                <img src="images/news/news-3/headline.jpg" alt="news3">
+                            </div>
+                            <div class="headlineDetail">
+                                <h3>Bất ngờ về tốc độ cho vay của các ngân hàng ở TP HCM</h3>
+                                <p>01/09/2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="headlineItem">
+                    <div class="headlineDetails">
+                        <a href="#">
+                            <div class="headlineImage">
+                                <img src="images/news/news-4/img1.jpg" alt="news4">
+                            </div>
+                            <div class="headlineDetail">
+                                <h3>Rộ dịch vụ bán tiền seri đẹp theo ngày sinh với giá cao ngất: Có phạm luật?</h3>
+                                <p>01/09/2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="headlineItem">
+                    <div class="headlineDetails">
+                        <a href="#">
+                            <div class="headlineImage">
+                                <img src="images/news/news-5/headline.webp" alt="news5">
+                            </div>
+                            <div class="headlineDetail">
+                                <h3>Cách để đòi lại tiền chuyển khoản nhầm nhanh nhất, có thể chỉ mất 1-2 ngày</h3>
+                                <p>01/09/2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="headlineItem">
+                    <div class="headlineDetails">
+                        <a href="#">
+                            <div class="headlineImage">
+                                <img src="images/news/news-6/img1.jpg" alt="news6">
+                            </div>
+                            <div class="headlineDetail">
+                                <h3>Giá vàng nhẫn tròn bất ngờ giảm</h3>
+                                <p>01/09/2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="headlineItem">
+                    <div class="headlineDetails">
+                        <a href="#">
+                            <div class="headlineImage">
+                                <img src="images/news/news-7/img2.webp" alt="news7">
+                            </div>
+                            <div class="headlineDetail">
+                                <h3>Long đong số phận tiền mệnh giá 200 đồng, 500 đồng</h3>
+                                <p>31/08/2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="headlineItem">
+                    <div class="headlineDetails">
+                        <a href="#">
+                            <div class="headlineImage">
+                                <img src="images/news/news-8/img1.webp" alt="news8">
+                            </div>
+                            <div class="headlineDetail">
+                                <h3>Từ 1/1/2025, tài khoản ngân hàng chưa xác thực không thể giao dịch online</h3>
+                                <p>31/08/2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="newsPopup">
+                <div class="newsWrapper">
+                    <div class="newsDetail">
+                        <div class="padding"></div>
+                        <div class="newsHeadline">
+                            <h2>Hàng triệu người có tài khoản ngân hàng lưu ý: Nếu nghi ngờ lộ thông tin, chủ động nhập sai mật khẩu 5 lần để giữ tiền</h2>
+                            <div class="newsOrigin">
+                                <h3>
+                                    <i class="fa-regular fa-clock"></i>
+                                    12:48 01/09/2024 
+                                </h3>
+                            </div>
+                            <div class="newsShare">
+                                <p>Chia sẻ qua </p>
+                                <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="mailto:"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="newsText">
+                            <h4>Trong trường hợp nghi ngờ bị lừa đảo hoặc lộ lọt thông tin bảo mật, khách hàng được khuyến nghị nhập sai mật khẩu liên tiếp 5 lần để khóa quyền đăng nhập dịch vụ. Hình thức này sẽ giúp khách hàng giữ lại được tiền trong tài khoản. </h4>
+                            <p>Trong cảnh báo về tình huống lừa đảo mới đây, ngân hàng Á Châu (ACB) đưa ra thêm các nguyên tắc an toàn cần lưu ý khi giao dịch trực tuyến.</p>
+                            <p>Theo đó, trong trường hợp phát hiện dấu hiệu hoặc nghi ngờ bị lừa đảo hoặc lộ lọt thông tin bảo mật, khách hàng nhập sai mật khẩu liên tiếp 5 lần để khóa quyền đăng nhập dịch vụ Ngân hàng số qua các ứng dụng hoặc liên hệ ngay ngân hàng để tạm khóa các dịch vụ.</p>
+                            <p>Thứ hai, chỉ truy cập vào website chính thức của ngân hàng và ứng dụng giao dịch chính thức từ cửa hàng ứng dụng Apple App Store hoặc Google Play Store.</p>
+                            <p>Đồng thời, khách hàng chỉ tải và cài đặt các ứng dụng trực tiếp trên các cửa hàng ứng dụng chính thức Apple App Store hoặc Google Play Store (CH Play). Khách hàng nên cập nhật ngay các phiên bản mới nhất của hệ điều hành Android, iOS (iPhone) và ứng dụng app ngân hàng nhằm vá các lỗ hổng bảo mật quan trọng đã được phát hiện.</p>
+                            <p>Phía ngân hàng cảnh báo người dùng không truy cập vào đường link lạ được gửi qua tin nhắn, email, mạng xã hội từ nguồn tin chưa xác thực hoặc làm theo các hướng dẫn qua cuộc gọi mạo danh.</p>
+                            <h4 class="author">Đức Anh</h4>
+                            <h4 class="magazine">An ninh tiền tệ</h4>
+                            <div class="source-wrapper">
+                                <button class="source-name">
+                                    Theo
+                                    <span>An ninh tiền tệ</span>
+                                </button>
+                                <div class="displayMsg">
+                                    <div class="alertMsg"></div>
+                                    <div class="source-link">
+                                        https://antt.nguoiduatin.vn/hang-trieu-nguoi-co-tai-khoan-ngan-hang-luu-y-neu-nghi-ngo-lo-thong-tin-chu-dong-nhap-sai-mat-khau-5-lan-de-giu-tien-205240109124841890.htm
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                        <div class="otherNews">
+                            <h2>Đọc thêm những tin tức mới nhất</h4>
+                            <div class="line"></div>
+                            <div class="headlineWrapper">
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-1/headline.png" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Hàng triệu người có tài khoản ngân hàng lưu ý: Nếu nghi ngờ lộ thông tin, chủ động nhập sai mật khẩu 5 lần để giữ tiền</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-2/headline.png" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Thị trường vàng liệu có tạm yên sau những ngày biến động mạnh?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-3/headline.jpg" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Bất ngờ về tốc độ cho vay của các ngân hàng ở TP HCM</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-4/img1.jpg" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Rộ dịch vụ bán tiền seri đẹp theo ngày sinh với giá cao ngất: Có phạm luật?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                    </div>
+                    <div class="newsDetail">
+                        <div class="padding"></div>
+                        <div class="newsHeadline">
+                            <h2>Thị trường vàng liệu có tạm yên sau những ngày biến động mạnh?</h2>
+                            <div class="newsOrigin">
+                                <h3>
+                                    <i class="fa-regular fa-clock"></i>
+                                    07:13 01/09/2024 
+                                </h3>
+                            </div>
+                            <div class="newsShare">
+                                <p>Chia sẻ qua </p>
+                                <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="mailto:?subject=Hãy xem tin tức mới nhất từ DHBank!&body=#"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="newsText">
+                            <h4>Sau một loạt các màn trình diễn ấn tượng trong suốt mùa hè với kết quả tăng 2% trong tháng 7, các nhà phân tích và nhà giao dịch giảm một chút tâm lý lạc quan đối với vàng trong những ngày đầu tháng 9.</h4>
+                            <p>Chỉ số giá chi tiêu tiêu dùng cá nhân (PCE) tháng 7 của Mỹ đúng như dự kiến đã làm giảm hy vọng của thị trường về việc Cục Dự trữ Liên bang (Fed) sẽ hạ mạnh lãi suất trong tháng 9, kéo theo giá vàng giảm.</p>
+                            <p>Phiên thứ Sáu (30/8), vàng giao ngay giảm 0,9% xuống 2.497,53 USD/ounce, xuống dưới ngưỡng 2.500 USD/ounce và lùi xa khỏi mức cao nhất mọi thời đại (là 2.531,60 USD đạt được vào ngày 20 tháng 8). Mặc dù vậy, tính chung trong tháng 8, giá vàng vẫn tăng 2% và là tháng có nhiều biến động ấn tượng.</p>
+                            <p>Trên thị trường trong nước, giá vàng tuần qua có sự biến động, nhưng tựu chung cả tuần giá gần như không thay đổi. Vàng miếng SJC hiện ở mức 79 – 81 triệu đồng/lượng (mua vào – bán ra), tương tự như một tuần trước đây, trong khi vàng nhẫn SJC 9999 hiện ở mức 77,4 - 78,65 triệu đồng/lượng Mua vào – bán ra) chỉ biến động nhẹ so với 77-78/5 triệu đồng/lượng (mua vào – bán ra) cách đây một tuần.</p>
+                            <p>Dữ liệu từ Bộ Thương mại Mỹ công bố hôm thứ Sáu cho thấy chỉ số giá chi tiêu tiêu dùng cá nhân (PCE) của nước này trong tháng 7 tăng 0,2%, phù hợp với dự báo của các nhà kinh tế. Điều này cho thấy nền kinh tế số 1 thế giới vẫn tăng trưởng vững chắc bất chấp lãi suất cao. Vì vậy, có khả năng Fed sẽ phải cân nhắc mức giảm lãi suất trong kỳ họp tới để hài hòa giữa hai mục tiêu: Chống lạm phát và thúc đẩy kinh tế.</p>
+                            <img src="images/news/news-2/img1.webp" alt="Thị trường vàng liệu có tạm yên sau những ngày biến động mạnh? - Ảnh 1">
+                            <p class="imgContext">Diễn biến giá vàng trong tháng 8</p>
+                            <p>Kết quả khảo sát của Kitco News cho thấy các nhà đầu tư bán lẻ đang kiềm chế sự lạc quan gần đây của họ về triển vọng giá vàng, trong khi các chuyên gia bắt đầu lưỡng lự khi dự báo về thị trường này.</p>
+                            <p>"Giá sẽ tăng", Adrian Day, Chủ tịch của Adrian Day Asset Management nằm trong số những người lạc quan về triển vọng giá vàng tăng. "Khi chúng ta tiến gần đến thời điểm Fed cắt giảm lãi suất, động lực thúc đẩy giá vàng có thể sẽ tăng lên. Chỉ riêng đợt cắt giảm lãi suất đầu tiên trong chu kỳ đã là tín hiệu tăng giá đối với vàng. Điều này đã được chứng minh trong hơn 20 năm qua", ông nói.</p>
+                            <p>“Tôi cho rằng giá vàng sẽ giảm vào tuần tới”, Marc Chandler, Tổng giám đốc của Bannockburn Global Forex cho biết. “Động lực tăng giá đã bị đình trệ. Đồng USD có thể tăng giá trở lại và duy trì đà tăng kéo dài. Tôi dự đoán giá vàng sẽ hướng tới mức 2470-75 USD”.</p>
+                            <p>“Giá sẽ đi ngang”, Darin Newsom, nhà phân tích thị trường cấp cao tại Barchart.com cho biết. “Biểu đồ hàng ngày của giá vàng kỳ hạn tháng 12 cho tới cuối tháng 8 không có biểu hiện rõ ràng nào. Do đó, tôi lựa chọn dự đoán giá vàng sẽ đi ngang vào tuần tới, không loại trừ khả năng giá biến động đột phá theo cả 2 hướng (tăng hoặc giảm)”.</p>
+                            <p>Phillip Streible, Trưởng phòng Chiến lược thị trường tại Blue Line Futures, tỏ ra bi quan về triển vọng giá vàng, nhưng cho biết bất kỳ đợt điều chỉnh nào nếu xảy ra cũng sẽ chỉ biến động nhẹ và nếu giá giảm sẽ mang đến cơ hội mua vào. Ông nói thêm rằng tháng 9 trong lịch sử là tháng tồi tệ đối với vàng, vì vậy các nhà giao dịch nên tìm kiếm cơ hội để mua, nhưng không nên đầu tư quá mức.</p>
+                            <p>Bob Haberkorn, Nhà môi giới hàng hóa cao cấp tại RJO Futures, đang xem xét diễn biến giá theo hướng đi ngang trong tuần tới. “2.500 đô la là ngưỡng hợp lý, và theo tự nhiên, đây sẽ là mức mà mọi người sẽ giao dịch quanh đó”, ông cho biết. “Mọi người đang tìm cách mua với giá dưới 2.500 USD, và theo cách thị trường di chuyển với lệnh dừng và lệnh giới hạn, giá sẽ tự nhiên giao dịch quanh mức đó, nhưng tôi nghĩ 2.480 USD khả năng cao sẽ là mức hỗ trợ”.</p>
+                            <p>Theo ông Haberkorn, giá vàng giảm trong phiên thứ Sáu chỉ vì USD tăng, và đó là tâm lý tránh rủi ro khi bước vào kỳ nghỉ cuối tuần dài. Tóm lại: “Đó là cảm giác của tất cả các thị trường hiện nay (không chỉ riêng vàng), mọi người chỉ đang thanh lý bớt hợp đồng để chờ đợi và xem xét vào tuần tới”.</p>
+                            <p>Về dữ liệu việc làm Mỹ sẽ công bố vào thứ Sáu tuần tới, ông Haberkorn cho biết ngay cả khi báo cáo bảng lương trong lĩnh vực phi nông nghiệp gây thất vọng thì cũng rất khó có khả năng Fed sẽ cắt giảm lãi suất 50 điểm cơ bản khi bắt đầu chu kỳ nới lỏng.</p>
+                            <p>“Tôi nghĩ hiện tại có quá nhiều áp lực đang gia tăng đối với việc cắt giảm lãi suất. Ông Powell đã phát tín hiệu rằng điều đó sẽ xảy ra và thị trường sẽ không ngạc nhiên. Nhưng để hạ tới 50 điểm cơ bản thì rất ít khả năng”.</p>
+                            <p>Theo ông Haberkorn, kịch bản có khả năng xảy ra nhất là Fed thực hiện một lần cắt giảm 25 điểm cơ bản, sau đó tạm dừng và theo dõi. “Lạm phát vẫn còn cao, mọi người vẫn đang cảm thấy nỗi đau của lạm phát và tôi không nghĩ rằng công việc của Fed đã hoàn thành”.</p>
+                            <p>Thậm chí “Nếu không phải là năm bầu cử, tôi nghĩ Fed sẽ còn chờ thêm nữa trước khi giảm lãi suất. Nhưng vì chúng ta sắp có một cuộc bầu cử, và hiện tại có rất nhiều áp lực chính trị buộc phải bắt đầu cắt giảm lãi suất. Tôi cho rằng Fed sẽ thực hiện 2 lần cắt giảm lãi suất từ nay đến tháng 11, mỗi lần giảm 0,25 điểm phần trăm.”</p>
+                            <p>Theo công cụ FedWatch của CME hôm thứ Sáu, các nhà giao dịch đã tăng nhẹ mức cược rằng Fed sẽ cắt giảm lãi suất 25 điểm cơ bản vào tháng tới lên 69%, trong khi hạ kỳ vọng vào khả năng cắt giảm 50 điểm cơ bản giảm xuống còn 31% sau báo cáo lạm phát.</p>
+                            <p>Tuần này, 15 nhà phân tích Phố Wall đã tham gia Khảo sát vàng của Kitco News. Trong đó, 5 chuyên gia, hay 33%, dự kiến ​​giá vàng sẽ tăng trong tuần tới, trong khi 5 nhà phân tích khác tin rằng giá sẽ giảm, và 5 người còn lại dự đoán giá đi ngang (các kịch bản chia đều nhau).</p>
+                            <p>Trong khi đó, có 199 nhà đầu tư bán lẻ trên Phố Chính tham gia khảo sát và mức độ lạc quan về triển vọng giá tăng đã giảm so với tuần trước. Cụ thể, 112 nhà giao dịch bán lẻ, hay 56%, mong đợi giá vàng sẽ tăng vào tuần tới; 47 người khác, hay 24%, dự kiến giá sẽ giảm, trong khi 40 người còn lại, đại diện cho 20%, dự đoán giá đi ngang.</p>
+                            <img src="images/news/news-2/img2.gif" alt="Thị trường vàng liệu có tạm yên sau những ngày biến động mạnh? - Ảnh 2">
+                            <p class="imgContext">Kết quả khảo sát của Kitco News về triển vọng giá vàng tuần 2-6/9</p>
+                            <p>Sau một tuần bị chi phối bởi tâm lý chờ đợi dữ liệu lạm phát Mỹ, tuần tới, những người tham gia thị trường sẽ tập trung vào các chỉ số việc làm khi các thị trường Bắc Mỹ trở lại sau kỳ nghỉ cuối tuần dài.</p>
+                            <p>Vào thứ Ba (3/9), thị trường sẽ nhận được dữ liệu chỉ số PMI sản xuất tháng 8 của Mỹ, và thứ Tư (4/9) sẽ biết quyết định về chính sách tiền tệ của Ngân hàng Canada và dữ liệu Cơ hội việc làm của Mỹ. Sau đó, vào thứ Năm (5/9), các nhà giao dịch sẽ theo dõi số đơn xin trợ cấp thất nghiệp hàng tuần và chỉ số PMI dịch vụ của Mỹ</p>
+                            <p>Nhưng sự kiện đáng chú ý nhất trong tuần tới là dữ liệu Bảng lương phi nông nghiệp của Mỹ, công bố vào sáng thứ Sáu (6/9). Một số chuyên gia thị trường tin rằng dữ liệu này có khả năng quyết định mức cắt giảm lãi suất ​​của Fed vào tháng 9 (25 điểm cơ bản hay 50 điểm cơ bản).</p>
+                            <h4 class="credit">Tham khảo: Kitco News</h4>
+                            <h4 class="author">Vũ Ngọc Diệp</h4>
+                            <h4 class="magazine">Nhịp sống thị trường</h4>
+                            <div class="source-wrapper">
+                                <button class="source-name">
+                                    Theo
+                                    <span>Nhịp sống thị trường</span>
+                                </button>
+                                <div class="displayMsg">
+                                    <div class="alertMsg"></div>
+                                    <div class="source-link">
+                                        https://markettimes.vn/thi-truong-vang-lieu-co-tam-yen-sau-nhung-ngay-bien-dong-manh-62312.html
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                        <div class="otherNews">
+                            <h2>Đọc thêm những tin tức mới nhất</h4>
+                            <div class="line"></div>
+                            <div class="headlineWrapper">
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-1/headline.png" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Hàng triệu người có tài khoản ngân hàng lưu ý: Nếu nghi ngờ lộ thông tin, chủ động nhập sai mật khẩu 5 lần để giữ tiền</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-2/headline.png" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Thị trường vàng liệu có tạm yên sau những ngày biến động mạnh?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-3/headline.jpg" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Bất ngờ về tốc độ cho vay của các ngân hàng ở TP HCM</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-4/img1.jpg" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Rộ dịch vụ bán tiền seri đẹp theo ngày sinh với giá cao ngất: Có phạm luật?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                    </div>
+                    <div class="newsDetail">
+                        <div class="padding"></div>
+                        <div class="newsHeadline">
+                            <h2>Bất ngờ về tốc độ cho vay của các ngân hàng ở TP HCM</h2>
+                            <div class="newsOrigin">
+                                <h3>
+                                    <i class="fa-regular fa-clock"></i>
+                                    14:56 01/09/2024 
+                                </h3>
+                            </div>
+                            <div class="newsShare">
+                                <p>Chia sẻ qua </p>
+                                <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="mailto:"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="newsText">
+                            <h4>Tăng trưởng tín dụng của các ngân hàng ở TP HCM chưa bứt phá như kỳ vọng trong bối cảnh doanh nghiệp vẫn còn gặp khó.</h4>
+                            <p>Số liệu của Cục Thống kê TP HCM vừa công bố cho thấy đến cuối tháng 8-2024, dư nợ tín dụng của hệ thống tổ chức tín dụng trên địa bàn mới đạt 4,5% so với cuối năm ngoái. Con số này thấp hơn nhiều so với tăng trưởng tín dụng của cả nước tới ngày 26-8 là 6,63%</p>
+                            <p>Đáng chú ý, tốc độ cho vay của hệ thống ngân hàng ở TP HCM có dấu hiệu tăng trưởng chậm lại trong 2 tháng qua, khi tháng 6 tăng 4%, tháng 7 tăng 3,9% và tháng 8 tăng 4,5% so với cuối năm ngoái. </p>
+                            <p>Tăng trưởng tín dụng chậm dù lãi suất cho vay giảm. Số liệu thống kê tại TP HCM đến hết tháng 8, lãi suất cho vay bằng VNĐ thấp hơn 0,9 điểm % đến 1 điểm % đối với các kỳ ngắn hạn so với cuối năm ngoái, bất chấp lãi suất huy động đang nhích lên.</p>
+                            <p>Theo Cục Thống kê TP HCM, những con số trên cho thấy khả năng hấp thụ vốn của kinh tế TP HCM vẫn chưa cải thiện nhiều và mục tiêu tín dụng tăng trưởng cả năm 15% sẽ gặp nhiều thách thức nếu không có giải pháp tháo gỡ. </p>
+                            <p>Ngân hàng Nhà nước cho hay dù tăng trưởng tín dụng cả hệ thống trong 8 tháng đạt 6,63% nhưng có sự phân hóa giữa các ngân hàng, có ngân hàng tăng trưởng thấp, thậm chí tăng trưởng âm trong khi một số đơn vị khác tăng sát chỉ tiêu được cấp trước đó.</p>
+                            <p>Thống kê của Công ty chứng khoán VPBank (VPBankS) cho thấy một số ngân hàng tăng trưởng tín dụng dưới 5% trong nửa đầu năm như Sacombank, TPBank, BVBank, PGBank, SeABank, ABBank…</p>
+                            <p>TS Hồ Hoàng Anh, Đại học Kinh tế TP HCM, nhận định nhiều chỉ số cho thấy các doanh nghiệp nội địa tại của thành phố đang phải đối mặt với nhiều khó khăn và chưa có dấu hiệu hồi phục vững chắc trong hoạt động đầu tư nửa đầu năm. Do đó, TP HCM cần chú trọng nhiều hơn tới kích cầu tiêu dùng và đầu tư nội địa, vừa giúp tổng cầu hồi phục nhanh hơn và giảm phụ thuộc vào xuất khẩu…</p>
+                            <h4 class="author">Thái Phương</h4>
+                            <h4 class="magazine">Người lao động</h4>
+                            <div class="source-wrapper">
+                                <button class="source-name">
+                                    Theo
+                                    <span>Người lao động</span>
+                                </button>
+                                <div class="displayMsg">
+                                    <div class="alertMsg"></div>
+                                    <div class="source-link">
+                                        https://nld.com.vn/bat-ngo-ve-toc-do-cho-vay-cua-cac-ngan-hang-o-tp-hcm-196240901142026674.htm
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                        <div class="otherNews">
+                            <h2>Đọc thêm những tin tức mới nhất</h4>
+                            <div class="line"></div>
+                            <div class="headlineWrapper">
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-1/headline.png" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Hàng triệu người có tài khoản ngân hàng lưu ý: Nếu nghi ngờ lộ thông tin, chủ động nhập sai mật khẩu 5 lần để giữ tiền</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-2/headline.png" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Thị trường vàng liệu có tạm yên sau những ngày biến động mạnh?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-3/headline.jpg" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Bất ngờ về tốc độ cho vay của các ngân hàng ở TP HCM</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-4/img1.jpg" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Rộ dịch vụ bán tiền seri đẹp theo ngày sinh với giá cao ngất: Có phạm luật?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                    </div>
+                    <div class="newsDetail">
+                        <div class="padding"></div>
+                        <div class="newsHeadline">
+                            <h2>Rộ dịch vụ bán tiền seri đẹp theo ngày sinh với giá cao ngất: Có phạm luật?</h2>
+                            <div class="newsOrigin">
+                                <h3>
+                                    <i class="fa-regular fa-clock"></i>
+                                    13:06 01/09/2024 
+                                </h3>
+                            </div>
+                            <div class="newsShare">
+                                <p>Chia sẻ qua </p>
+                                <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="mailto:"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="newsText">
+                            <h4>Trên "chợ mạng", nhiều người lập cả gian hàng rất chuyên nghiệp để rao những tờ tiền VNĐ mệnh giá từ thấp đến cao với giá bán gấp hàng trăm lần giá trị thật.</h4>
+                            <p>Nắm bắt được nhu cầu của nhiều khách hàng muốn mua những tờ tiền có số seri trùng ngày sinh nhật, trùng ngày có ý nghĩa với mình hoặc các dãy số trùng nhau, các dãy số tiến liên tục…dịch vụ bán tiền seri đẹp đã xuất hiện, với giá cao gấp nhiều lần so với mệnh giá thực.</p>
+                            <p>Ví dụ, tại một website rao bán tiền sinh nhật, đồng tiền mệnh giá 1.000 đồng, có số seri ngày sinh là ngày 1/2/2023 (0122023) được bán với giá 150.000 đồng/tờ, cao gấp 150 lần giá trị (chưa bao gồm phí ship). Vẫn là ngày sinh đó nhưng được in trên tờ tiền mệnh giá 5.000 đồng thì giá bán là 200.000 đồng/tờ.</p>
+                            <p>Tương tự, tiền cặp đôi (cặp đôi năm sinh, ví dụ: 1998 - 1990) cũng được website này rao bán với giá cao ngất. Tờ tiền mệnh giá 10.000 đồng sở hữu số seri cặp đôi 19981990 có giá 250.000 đồng/tờ. Vẫn là cặp số này nhưng ở tờ tiền mệnh giá 20.000 đồng được bán với giá 300.000 đồng/tờ. Còn cặp số này ở tờ tiền mệnh giá 200.000 đồng thì được bán với giá 500.000 đồng/tờ. Tất cả đều chưa bao gồm phí ship.</p>
+                            <img src="images/news/news-4/img1.jpg" alt="Rộ dịch vụ bán tiền seri đẹp theo ngày sinh với giá cao ngất: Có phạm luật? - Ảnh 1">
+                            <p class="imgContext">Ảnh chụp màn hình.</p>
+                            <p>Trả lời PV Báo điện tử VTC News về việc buôn bán tiền số seri đẹp có vi phạm pháp luật không, luật sư Trần Tuấn Anh, Giám đốc Công ty luật Minh Bạch cho biết, việc mua bán tiền với mục đích sưu tầm theo seri số đẹp xuất phát từ nhu cầu sưu tập và thị hiếu cá nhân. Vì thế, để đánh giá hành vi này có phạm luật hay không cần có sự xem xét kỹ về các khía cạnh pháp lý liên quan.</p>
+                            <p>Theo quy định của Ngân hàng Nhà nước Việt Nam, tiền tệ (bao gồm cả tiền giấy và tiền kim loại) là phương tiện thanh toán hợp pháp duy nhất trên lãnh thổ Việt Nam. Việc mua bán, trao đổi tiền tệ nếu được thực hiện một cách hợp pháp thì không bị coi là vi phạm pháp luật.</p>
+                            <p><span class="quote">“Trước hết, ta cần xem xét về tính hợp pháp của tiền tệ, nếu tiền được mua bán là tiền thật, không bị chỉnh sửa hoặc thay đổi, thì việc mua bán tiền theo số seri không bị coi là phạm pháp. Việc mua bán tiền theo số seri đẹp có thể coi là một dạng kinh doanh hàng hóa, trong đó tiền là mặt hàng được mua bán. Còn nếu tiền được giao dịch là tiền giả, tiền được làm giả thông qua các hành vi sửa đổi hoặc thay đổi tình trạng của tiền như gọt, cắt, hoặc dán lại tiền là hành vi vi phạm pháp luật và bị xử phạt hình sự”</span>, luật sư Trần Tuấn Anh cho biết.</p>
+                            <p>Bên cạnh đó, tùy thuộc vào quy mô và tính chất hoạt động, việc mua bán tiền số đẹp được thực hiện với mục đích kinh doanh (tức là nhằm mục đích sinh lợi và được thực hiện thường xuyên) thì có thể được xem là một hoạt động kinh doanh. Người bán cần đăng ký kinh doanh, tuân thủ quy định về thuế và pháp luật liên quan, trường hợp vi phạm có thể bị xử phạt hành chính hoặc thậm chí là hình sự.</p>
+                            <p>Nếu việc mua bán chỉ là hoạt động cá nhân, không thường xuyên và không có mục đích sinh lợi lớn thì có thể không cần đăng ký kinh doanh. Tuy nhiên, ngay cả trong trường hợp này, người bán vẫn cần đảm bảo rằng tiền được giao dịch là tiền hợp pháp.</p>
+                            <p>Đồng thời, nếu việc mua bán tiền số đẹp bị lợi dụng để lừa đảo, chiếm đoạt tài sản của người khác thì hành vi này sẽ bị coi là phạm pháp và bị xử lý hình sự theo Bộ luật Hình sự về tội lừa đảo chiếm đoạt tài sản.</p>
+                            <img src="images/news/news-4/img2.jpg" alt="Rộ dịch vụ bán tiền seri đẹp theo ngày sinh với giá cao ngất: Có phạm luật? - Ảnh 2">
+                            <p class="imgContext">Ảnh chụp màn hình.</p>
+                            <p class="quote">“Nếu tiền không bị làm giả hoặc sửa đổi thì việc mua bán tiền theo số seri đẹp không bị coi là vi phạm pháp luật. Tuy nhiên, trước khi quyết định mua tiền theo số seri, người tiêu dùng nên tìm hiểu kỹ lưỡng và đảm bảo rằng việc giao dịch này không vi phạm pháp luật.</p>
+                            <p class="quote">Đặc biệt là kiểm tra xem người bán có giấy phép hoạt động hợp pháp không. Đồng thời, người tiêu dùng cần cẩn trọng với các giao dịch mua bán tiền qua mạng hoặc từ những nguồn không rõ ràng để tránh bị lừa đảo. Nên thực hiện giao dịch qua những kênh chính thức và đáng tin cậy.</p>
+                            <p class="quote">Giá trị của tiền theo số seri đẹp chủ yếu dựa vào sự đánh giá của người mua và thị trường. Người tiêu dùng cần hiểu rõ rằng giá trị thực của tiền tệ không thay đổi dựa trên số seri và việc đầu tư vào các số seri đẹp có thể gặp rủi ro cao cũng như tránh việc lạm dụng số seri đẹp để tạo sự tăng giá không hợp lý hoặc gây ảnh hưởng tiêu cực đến thị trường tiền tệ.</p>
+                            <p><span class="quote">Nhìn chung, việc mua bán tiền theo số seri đẹp cần được nhìn nhận rõ về các khía cạnh pháp lý cũng như giá trị thực tế của sản phẩm để cả người bán và người mua đều không vi phạm pháp luật ”</span>, ông Tuấn Anh khuyến cáo.</p>
+                            <h4 class="author">Công Hiếu</h4>
+                            <h4 class="magazine">VTC News</h4>
+                            <div class="source-wrapper">
+                                <button class="source-name">
+                                    Theo
+                                    <span>VTC News</span>
+                                </button>
+                                <div class="displayMsg">
+                                    <div class="alertMsg"></div>
+                                    <div class="source-link">
+                                        https://vtcnews.vn/ro-dich-vu-ban-tien-seri-dep-theo-ngay-sinh-voi-gia-cao-ngat-co-pham-luat-ar890414.html
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                        <div class="otherNews">
+                            <h2>Đọc thêm những tin tức mới nhất</h4>
+                            <div class="line"></div>
+                            <div class="headlineWrapper">
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-1/headline.png" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Hàng triệu người có tài khoản ngân hàng lưu ý: Nếu nghi ngờ lộ thông tin, chủ động nhập sai mật khẩu 5 lần để giữ tiền</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-2/headline.png" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Thị trường vàng liệu có tạm yên sau những ngày biến động mạnh?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-3/headline.jpg" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Bất ngờ về tốc độ cho vay của các ngân hàng ở TP HCM</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-4/img1.jpg" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Rộ dịch vụ bán tiền seri đẹp theo ngày sinh với giá cao ngất: Có phạm luật?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                    </div>
+                    <div class="newsDetail">
+                        <div class="padding"></div>
+                        <div class="newsHeadline">
+                            <h2>Cách để đòi lại tiền chuyển khoản nhầm nhanh nhất, có thể chỉ mất 1-2 ngày</h2>
+                            <div class="newsOrigin">
+                                <h3>
+                                    <i class="fa-regular fa-clock"></i>
+                                    08:34 01/09/2024 
+                                </h3>
+                            </div>
+                            <div class="newsShare">
+                                <p>Chia sẻ qua </p>
+                                <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="mailto:"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="newsText">
+                            <img src="images/news/news-5/headline.webp" alt="Cách để đòi lại tiền chuyển khoản nhầm nhanh nhất, có thể chỉ mất 1-2 ngày - Ảnh tiêu đề">
+                            <h4>Tưởng như rất khó xảy ra nhưng thực tế vẫn xảy ra rất nhiều trường hợp người dùng ngân hàng chuyển khoản nhầm số tiền, nhầm số tài khoản. Nhiều người loay hoay không biết nên xử lý ra sao khi rơi vào hoàn cảnh này vì thông thường việc tra soát, đối chiếu của các ngân hàng có thể mất hàng tuần liền. Tuy nhiên, trên thực tế, nhiều trường hợp người chuyển nhầm đã lấy lại đươc tiền chỉ trong 1-2 ngày.</h4>
+                            <p style="font-weight: bold;">Các bước đòi lại tiền chuyển nhầm</p>
+                            <p>Theo quy định của pháp luật, người nhận tiền có nghĩa vụ hoàn trả tiền được chuyển nhầm vào tài khoản. Nếu người nhận không phối hợp hoàn trả số tiền và sử dụng số tiền đó, người chuyển có quyền khiếu nại theo quy định. Hình phạt cho hành vi sử dụng tiền chuyển nhầm dưới 10 triệu là xử phạt hành chính 3-5 triệu đồng, nếu số tiền đó lớn hơn 10 triệu, người sử dụng có thể bị truy cứu hình sự với tội danh "Chiếm giữ trái phép tài sản".</p>
+                            <p>Cụ thể, Bộ luật Dân sự 2015 quy định người chiếm hữu tài sản của người khác mà không có căn cứ pháp luật thì phải hoàn trả chủ sở hữu tài sản đó. Nếu không tìm được chủ sở hữu thì phải giao cho cơ quan nhà nước có thẩm quyền để xử lý (trừ trường hợp quy định tại Điều 236 của Bộ luật Dân sự 2015).</p>
+                            <p>Khi phát hiện chuyển nhầm tiền, bạn có thể gửi số tiền nhỏ vào số tài khoản chuyển nhầm với nội dung nhờ họ liên lạc lại, cho người nhận thông tin về sự cố chuyển nhầm. Một số người đã sử dụng cách này và may mắn người nhận được tiền đã chủ động liên hệ lại và giải quyết sự cố. Tuy nhiên, trong phần lớn trường hợp còn lại sẽ phải thông qua ngân hàng và cơ quan công an.</p>
+                            <p>Theo khuyến cáo của nhiều ngân hàng, trong trường hợp phát hiện ra mình chuyển khoản nhầm, khách hàng cần phải liên hệ với ngân hàng qua hotline hoặc quầy giao dịch để báo cáo về sự cố. Ở bước này, khách hàng nên ra trực tiếp chi nhánh, phòng giao dịch để làm giấy đề nghị ngân hàng hỗ trợ tra soát.</p>
+                            <p>Bước tiếp theo, bạn cần cung cấp các thông tin bao gồm CMND/CCCD, hóa đơn chứng minh giao dịch chuyển tiền nhầm,...Ngân hàng sẽ tiếp nhận thông tin để chuyển tới ngân hàng thụ hưởng. Việc xử lý tra soát yêu cầu hoàn trả do chuyển khoản nhầm sẽ theo qui trình hiện tại của ngân hàng hưởng. Khi tiếp nhận yêu cầu của khách hàng, các ngân hàng sẽ hỗ trợ liên hệ với người nhận tiền, động viên họ trả lại. Trường hợp người nhận tiền không trả thì ngân hàng sẽ có văn bản thông báo xác nhận việc chuyển nhầm tiền. Khi đó, người chuyển tiền có thể tố cáo người nhận tiền với cơ quan công an hoặc khởi kiện lên tòa án.</p>
+                            <p style="font-weight: bold;">Có được yêu cầu ngân hàng phong toả ngay tài khoản nhận tiền chuyển nhầm?</p>
+                            <p>Vừa qua, Chính phủ đã ban hành Nghị định 52/2024/NĐ-CP ngày 15/5/2024 quy định về thanh toán không dùng tiền mặt thay thế cho Nghị định 101/2012/NĐ-CP và Nghị định 80/2016/NĐ-CP. Nhiều người lan truyền thông tin rằng với quy định mới, khi chuyển khoản nhầm thì có thể yêu cầu ngân hàng phong tỏa tài khoản người nhận.</p>
+                            <p>Tuy nhiên, theo khẳng định của NHNN, hoàn toàn không có chuyện được yêu cầu phong toả tài khoản người nhận nhầm. Đại diện NHNN cho biết: "Khi khách hàng đã đi một lệnh chuyển tiền liên ngân hàng đến tài khoản bên kia, khách hàng không có quyền kiểm soát tài khoản đó. Kể cả lấy lý do chuyển nhầm, khách hàng thông qua ngân hàng để khiếu nại với bên nhận cũng không thể đảo ngược lại giao dịch. Quyền phong tỏa phải theo yêu cầu của cơ quan bảo vệ pháp luật (tòa án, viện kiểm soát, công an) đến một cấp nào đó, chẳng hạn như cấp huyện. Không có chuyện chuyển nhầm đến một tài khoản khác xong rồi mình có thể tự động đến ngân hàng đầu bên kia và yêu cầu họ phong tỏa ngay tài khoản người nhận. Làm vậy thì sẽ có những hệ lụy, rủi ro rất lớn nếu có sự tùy tiện, sai lầm của người chuyển. Phải rất cẩn trọng để bảo vệ các bên liên quan".</p>
+                            <p style="font-weight: bold;">Nhiều trường hợp lấy lại đươc tiền chỉ trong vài ngày</p>
+                            <p>Thực tế thời gian gần đây, nhiều vụ chuyển tiền nhầm đã được giải quyết nhanh chóng chỉ trong vài ngày nhờ sự giúp đỡ của cơ quan chức năng.</p>
+                            <p>Chẳng hạn, ngày 10/8/2024, Công an thị xã Đông Triều, tỉnh Quảng Ninh đã tiếp nhận nội dung trình báo của anh Nguyễn Văn Quy, trình bày do sơ suất, anh Quy đã chuyển nhầm số tiền 22 triệu đồng sang một tài khoản ngân hàng của người lạ. Ngay sau khi tiếp nhận, Công an thị xã Đông Triều đã giao Đội Cảnh sát hình sự tập trung rà soát, xác minh thông tin, xác định được chủ tài khoản do anh Quy chuyển nhầm số tiền 22 triệu đồng là anh Đ.V.B, trú tại huyện Bảo Thắng, tỉnh Lào Cai. Đến ngày 11/8/2024, anh Đ.V.B đã chuyển lại toàn bộ số tiền 22 triệu đồng do nhận khoản nhầm vào tài khoản của anh Nguyễn Văn Quy.</p>
+                            <p>Trước đó, Công an thị xã Đông Triều cũng đã xử lý một vụ chuyển khoản nhầm tương tự. Cụ thể, ngày 30/7/2024, Công an thị xã Đông Triều tiếp nhận nội dung trình báo của anh Nguyễn Văn Thông, trình bày do sơ suất đã chuyển nhầm số tiền 7,3 triệu đồng sang một tài khoản ngân hàng của người lạ. Đến ngày 01/8/2024, anh Nguyễn Văn Thông đã nhận lại toàn bộ số tiền do bị chuyển nhầm vào tài khoản của mình.</p>
+                            <p>Cũng có những trường hợp khác, người nhận nhầm tiền đã chủ động tìm đến cơ quan chức năng để trao trả số tiền nhận được. Ngày 19/08/2024, bà Võ Thị Tiên (tỉnh Đắk Nông) phát hiện trong tài khoản cá nhân mở tại ngân hàng Agribank có người chuyển nhầm đến số tiền 110 triệu đồng. Do không biết rõ về nguồn gốc số tiền chuyển đến cũng như danh tính người chuyển tiền nên bà Tiên đã nhanh chóng đến Công an xã Đắk Búk So trình báo và nhờ lực lượng Công an xác minh, liên hệ với chủ tài khoản chuyển nhầm, để trả lại. Ngay sau khi tiếp nhận thông tin, Công an xã Đắk Búk So đã tiến hành làm việc với chi nhánh ngân hàng Agribank huyện Tuy Đức và xác định người chuyển tiền là chị Nguyễn Thị Luân, trú tại xã Đắk Búk So nên đã liên hệ với chị Luân đến trụ sở Công an xã để làm việc và trao trả số tiền chuyển nhầm.</p>
+                            <h4 class="author">Thanh Anh</h4>
+                            <h4 class="magazine">An ninh Tiền tệ</h4>
+                            <div class="source-wrapper">
+                                <button class="source-name">
+                                    Theo
+                                    <span>An ninh Tiền tệ</span>
+                                </button>
+                                <div class="displayMsg">
+                                    <div class="alertMsg"></div>
+                                    <div class="source-link">
+                                        https://antt.nguoiduatin.vn/cach-de-doi-lai-tien-chuyen-khoan-nham-nhanh-nhat-co-the-chi-mat-1-2-ngay-205240109083433144.htm
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                        <div class="otherNews">
+                            <h2>Đọc thêm những tin tức mới nhất</h4>
+                            <div class="line"></div>
+                            <div class="headlineWrapper">
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-1/headline.png" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Hàng triệu người có tài khoản ngân hàng lưu ý: Nếu nghi ngờ lộ thông tin, chủ động nhập sai mật khẩu 5 lần để giữ tiền</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-2/headline.png" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Thị trường vàng liệu có tạm yên sau những ngày biến động mạnh?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-3/headline.jpg" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Bất ngờ về tốc độ cho vay của các ngân hàng ở TP HCM</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-4/img1.jpg" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Rộ dịch vụ bán tiền seri đẹp theo ngày sinh với giá cao ngất: Có phạm luật?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                    </div>
+                    <div class="newsDetail">
+                        <div class="padding"></div>
+                        <div class="newsHeadline">
+                            <h2>Giá vàng nhẫn tròn bất ngờ giảm</h2>
+                            <div class="newsOrigin">
+                                <h3>
+                                    <i class="fa-regular fa-clock"></i>
+                                    08:31 01/09/2024 
+                                </h3>
+                            </div>
+                            <div class="newsShare">
+                                <p>Chia sẻ qua </p>
+                                <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="mailto:"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="newsText">
+                            <h4>Sáng nay (1/9), giá vàng nhẫn tròn trong nước giảm 150.000 đồng/lượng, về mức 77,3 - 78,6 triệu đồng/lượng mua vào - bán ra. Đà giảm của giá vàng trong nước xuất phát từ việc giá vàng thế giới chững lại.</h4>
+                            <p>Công ty Vàng bạc đá quý Sài Gòn niêm yết giá vàng nhẫn tròn 77,3 - 78,6 triệu đồng/lượng. Mức giá này giảm 150.000 đồng/lượng chiều mua vào và giảm 50.000 đồng/lượng chiều bán ra.</p>
+                            <p>Tập đoàn Doji, Công ty Phú Quý cùng niêm yết giá vàng nhẫn tròn 77,5 - 78,6 triệu đồng/lượng mua vào - bán ra , giảm 100.000 đồng/lượng cả 2 chiều mua vào - bán ra.</p>
+                            <p>Giá vàng nhẫn tròn được Công ty Bảo Tín Minh Châu niêm yết 77,46 - 78,66 triệu đồng/lượng.</p>
+                            <p>Sau khi liên tiếp trụ vững ở mức cao nhất từ đầu năm tới nay, phiên giao dịch ngày 1/9, giá vàng nhẫn tròn trong nước bất ngờ quay đầu giảm. Chênh lệch giá vàng nhẫn tròn mua vào - bán ra 1,1 - 1,3 triệu đồng/lượng (tuỳ từng thương hiệu).</p>
+                            <img src="images/news/news-6/img1.jpg" alt="Giá vàng nhẫn tròn bất ngờ giảm - Ảnh 1">
+                            <p class="imgContext">Giá vàng nhẫn tròn quay đầu giảm về mức 77,3 - 78,6 triệu đồng/lượng. Ảnh: QN.</p>
+                            <p>Giá vàng miếng SJC được doanh nghiệp và ngân hàng giữ nguyên mức 79 - 81 triệu đồng/lượng mua vào - bán ra.</p>
+                            <p>Cùng thời điểm, giá vàng thế giới 2.503 USD/ounce. Quy đổi theo tỷ giá hiện hành, giá vàng thế giới khoảng 76 triệu đồng/lượng (chưa kể thuế phí).</p>
+                            <p>Trên thị trường tiền tệ, ngày 1/9 rơi vào ngày nghỉ lễ Quốc khánh, Ngân hàng Nhà nước giữ nguyên niêm yết tỷ giá trung tâm 24.221 đồng/USD. Tại ngân hàng thương mại, tỷ giá USD quanh mức 24.692 - 25.032 đồng/USD.</p>
+                            <h4 class="author">Quỳnh Nga</h4>
+                            <h4 class="magazine">Tiên phong</h4>
+                            <div class="source-wrapper">
+                                <button class="source-name">
+                                    Theo
+                                    <span>Tiên phong</span>
+                                </button>
+                                <div class="displayMsg">
+                                    <div class="alertMsg"></div>
+                                    <div class="source-link">
+                                        https://tienphong.vn/gia-vang-nhan-tron-bat-ngo-giam-post1668921.tpo
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                        <div class="otherNews">
+                            <h2>Đọc thêm những tin tức mới nhất</h4>
+                            <div class="line"></div>
+                            <div class="headlineWrapper">
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-1/headline.png" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Hàng triệu người có tài khoản ngân hàng lưu ý: Nếu nghi ngờ lộ thông tin, chủ động nhập sai mật khẩu 5 lần để giữ tiền</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-2/headline.png" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Thị trường vàng liệu có tạm yên sau những ngày biến động mạnh?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-3/headline.jpg" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Bất ngờ về tốc độ cho vay của các ngân hàng ở TP HCM</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-4/img1.jpg" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Rộ dịch vụ bán tiền seri đẹp theo ngày sinh với giá cao ngất: Có phạm luật?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                    </div>
+                    <div class="newsDetail">
+                        <div class="padding"></div>
+                        <div class="newsHeadline">
+                            <h2>Long đong số phận tiền mệnh giá 200 đồng, 500 đồng</h2>
+                            <div class="newsOrigin">
+                                <h3>
+                                    <i class="fa-regular fa-clock"></i>
+                                    17:06 31/08/2024
+                                </h3>
+                            </div>
+                            <div class="newsShare">
+                                <p>Chia sẻ qua </p>
+                                <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="mailto:"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="newsText">
+                            <h4>Dù pháp luật quy định, các đơn vị cung cấp dịch vụ, tiểu thương phải nhận tiền có mệnh giá nhỏ 200 đồng, 500 đồng. Tuy nhiên trên thực tế hiện có rất ít nơi chịu nhận tiền có mệnh giá này.</h4>
+                            <p>Tờ tiền 500 đồng từng là một phần không thể thiếu trong ví tiền của người dân, giờ đây lại trở nên "vô dụng" trong các giao dịch nhỏ lẻ. Với giá trị quá nhỏ so với mặt bằng giá cả hiện nay, tờ tiền này dường như đã mất đi giá trị thực tế, khiến nhiều người tiêu dùng gặp phải tình huống khó xử.</p>
+                            <img src="images/news/news-7/img1.webp" alt="Long đong số phận tiền mệnh giá 200 đồng, 500 đồng - Ảnh 1">
+                            <p>Anh Quý (sống tại quận Nam Từ Liêm, Hà Nội) kể lại, anh sử dụng tờ tiền 500 đồng để trả tiền một gói bánh nhưng người bán hàng đã từ chối nhận với lý do "giờ này ai còn dùng 500 đồng nữa".</p>
+                            <p>Thực tế, với mức giá từ vài nghìn đồng trở lên cho các mặt hàng thông dụng, tờ tiền 500 đồng gần như không còn giá trị trong mắt người tiêu dùng.</p>
+                            <p>Chị Minh Phương (sống tại quận Bắc Từ Liêm, Hà Nội) chia sẻ: “Thông thường trong các siêu thị và cửa hàng tạp hoá, nếu mua đồ có giá thừa 500 đồng, người bán hàng hoặc thu ngân sẽ trả lại bằng cho 1 chiếc kẹo vì họ không có 500 đồng trả lại”.</p>
+                            <img src="images/news/news-7/img1.webp" alt="Long đong số phận tiền mệnh giá 200 đồng, 500 đồng - Ảnh 2">
+                            <p>Việc giữ lại tờ 500 đồng cũng trở thành “vô dụng” với người tiêu dùng, bởi tờ tiền này không còn hữu ích trong các hoạt động chi tiêu hàng ngày. Nhiều người thậm chí đã chọn cách "bỏ xó" tờ tiền này, coi nó như một kỷ vật hơn là một công cụ giao dịch thực tế.</p>
+                            <p>Trong bối cảnh lạm phát và giá cả leo thang, việc tờ 500 đồng dần mất đi giá trị là điều không thể tránh khỏi. Các giao dịch có giá trị nhỏ lẻ như qua phà, mua hàng hóa lặt vặt, giờ đây trở thành những trường hợp hiếm hoi mà tờ tiền này vẫn còn tồn tại, dù chỉ với vai trò rất mờ nhạt.</p>
+                            <p>Anh Lê Đình Minh (ngụ quận Bình Thạnh, TPHCM) cứ cuối tuần lại đưa gia đình về thăm quê ngoại ở huyện Nhơn Trạch, tỉnh Đồng Nai. Con đường gần nhất mà anh Minh hay đi là qua phà Cát Lái, giá cho xe máy là 4.500 đồng/chiếc, xe máy cộng với người ngồi sau là 6.500 đồng/chiếc cho một lần qua phà.</p>
+                            <p>“Tôi ngạc nhiên khi bây giờ, phà Cát Lái giờ vẫn còn sử dụng tiền 500 đồng. Khi nhân viên thối tiền 500 đồng, tôi không lấy thì họ bảo giữ lại để đi lượt về”, anh Minh nói.</p>
+                            <img src="images/news/news-7/img3.webp" alt="Long đong số phận tiền mệnh giá 200 đồng, 500 đồng - Ảnh 3">
+                            <p class="imgContext">Phà Cát Lái vẫn nhận tiền mệnh giá nhỏ.</p>
+                            <p>Tại siêu thị Emart ở quận Gò Vấp, các quầy tính tiền vẫn nhận những tờ mệnh giá nhỏ như 200 đồng, 500 đồng… Thế nhưng, các chợ truyền thống ở TPHCM lại ngại nhận những tờ tiền có mệnh giá nhỏ.</p>
+                            <p>Trao đổi với PV Tiền Phong , chuyên gia ngân hàng Nguyễn Trí Hiếu khẳng định, tiền với mệnh giá 200 đồng, 500 đồng vẫn đang được lưu hành do đây là tiền Ngân hàng Nhà nước Việt Nam phát hành. “Đây là đồng tiền pháp định, bắt buộc người cung cấp dịch vụ phải nhận tiền này”, ông Hiếu nói.</p>
+                            <p>Vị chuyên gia khẳng định, Khoản 3 Điều 23 Luật Ngân hàng Nhà nước Việt Nam 2010 cấm hành vi từ chối nhận, lưu hành đồng tiền đủ tiêu chuẩn lưu thông do Ngân hàng Nhà nước phát hành.</p>
+                            <p>Hành vi từ chối nhận, lưu hành đồng tiền đủ tiêu chuẩn lưu thông và Ngân hàng Nhà nước không có chủ trương thu hồi là hành vi vi phạm pháp luật, vi phạm điều cấm trong Luật ngân hàng nhà nước Việt Nam. Tuy nhiên, ông Hiếu cho biết, pháp luật chưa có chế tài xử phạt về hành vi này.</p>
+                            <p>Tuy nhiên, ông Nguyễn Trí Hiếu cũng cho rằng, trên thực tế, rất ít người và nơi cung cấp dịch vụ còn dùng tiền lẻ. Do đó, Ngân hàng Nhà nước cần cân nhắc có nên tiếp tục phát hành tiền có mệnh giá này hay không. Bởi chi phí in tiền, vận chuyển… khá lớn nhưng hiệu quả sử dụng không cao.</p>
+                            <h4 class="author">Duy Quang, Hồng Nhung</h4>
+                            <h4 class="magazine">Tiền phong</h4>
+                            <div class="source-wrapper">
+                                <button class="source-name">
+                                    Theo
+                                    <span>Tiền phong</span>
+                                </button>
+                                <div class="displayMsg">
+                                    <div class="alertMsg"></div>
+                                    <div class="source-link">
+                                        https://tienphong.vn/long-dong-so-phan-tien-menh-gia-200-dong-500-dong-post1668106.tpo
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                        <div class="otherNews">
+                            <h2>Đọc thêm những tin tức mới nhất</h4>
+                            <div class="line"></div>
+                            <div class="headlineWrapper">
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-1/headline.png" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Hàng triệu người có tài khoản ngân hàng lưu ý: Nếu nghi ngờ lộ thông tin, chủ động nhập sai mật khẩu 5 lần để giữ tiền</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-2/headline.png" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Thị trường vàng liệu có tạm yên sau những ngày biến động mạnh?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-3/headline.jpg" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Bất ngờ về tốc độ cho vay của các ngân hàng ở TP HCM</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-4/img1.jpg" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Rộ dịch vụ bán tiền seri đẹp theo ngày sinh với giá cao ngất: Có phạm luật?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                    </div>
+                    <div class="newsDetail">
+                        <div class="padding"></div>
+                        <div class="newsHeadline">
+                            <h2>Từ 1/1/2025, tài khoản ngân hàng chưa xác thực không thể giao dịch online</h2>
+                            <div class="newsOrigin">
+                                <h3>
+                                    <i class="fa-regular fa-clock"></i>
+                                    16:07 31/08/2024
+                                </h3>
+                            </div>
+                            <div class="newsShare">
+                                <p>Chia sẻ qua </p>
+                                <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="mailto:"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="newsText">
+                            <h4>Từ 1/1/2025 chủ tài khoản ngân hàng phải xác thực tài khoản chính chủ mới được giao dịch online</h4>
+                            <p><strong>Từ tháng 1/2025, tài khoản chưa xác thực sẽ không thể giao dịch online.</strong> Đây là nội dung mới nhất tại Thông tư 18 quy định về hoạt động thẻ ngân hàng vừa được Ngân hàng Nhà nước ban hành.</p>
+                            <p>Quy định nêu rõ phải đối chiếu giấy tờ tùy thân và thông tin sinh trắc học chủ tài khoản thì thẻ mới thực hiện được giao dịch bằng phương thức điện tử. Việc này góp phần "làm sạch" tài khoản, loại bỏ các tài khoản sử dụng giấy tờ giả, loại bỏ tài khoản không chính chủ.</p>
+                            <p>Dữ liệu sinh trắc học của chủ tài khoản phải trùng khớp với dữ liệu sinh trắc học được lưu trong bộ phận lưu trữ thông tin được mã hoá của thẻ CCCD gắn chip hoặc thẻ CCCD của chủ tài khoản đã được xác thực chính xác do cơ quan Công an cấp hoặc thông qua xác thực tài khoản định danh điện tử của người đó do hệ thống định danh và xác thực điện tử tạo lập; hoặc:</p>
+                            <p>Dữ liệu sinh trắc học được thu thập thông qua gặp mặt trực tiếp người đó đối với trường hợp người nước ngoài không sử dụng danh tính điện tử, người gốc Việt Nam chưa xác định được quốc tịch, hoặc:</p>
+                            <img src="images/news/news-8/img1.webp" alt="Từ 1/1/2025, tài khoản ngân hàng chưa xác thực không thể giao dịch online - Ảnh minh họa">
+                            <p class="imgContext">Từ 1/1/2025, tài khoản ngân hàng chưa xác thực không thể giao dịch online - Ảnh minh họa</p>
+                            <p>Dữ liệu sinh trắc học đã được thu thập và kiểm tra (đảm bảo sự khớp đúng giữa dữ liệu sinh trắc học của người đó với dữ liệu sinh trắc học trong bộ phận lưu trữ thông tin được mã hoá của thẻ CCCD hoặc thẻ CCCD đã được xác thực chính xác là do cơ quan Công an cấp hoặc với dữ liệu sinh trắc học của người đó thông qua xác thực tài khoản định danh điện tử do hệ thống định danh điện tử và xác thực điện tử tạo lập); hoặc:</p>
+                            <p>Dữ liệu sinh trắc học của người đó được lưu trong Cơ sở dữ liệu quốc gia về dân cư trong trường hợp sử dụng thẻ CCCD không có bộ phận lưu trữ thông tin được mã hoá;</p>
+                            <p>Áp dụng các biện pháp xác thực đối với từng loại giao dịch trong thanh toán bằng phương tiện điện tử theo quy định của NHNN về an toàn, bảo mật cho việc cung cấp dịch vụ ngân hàng bằng phương tiện điện tử.</p>
+                            <p>Việc sử dụng tài khoản thanh toán bằng VND của người không cư trú, người cư trú là cá nhân nước ngoài và tài khoản thanh toán bằng ngoại tệ phải tuân thủ quy định tại điều này và các quy định pháp luật về quản lý ngoại hối.</p>
+                            <p>Như vậy, kể <strong>từ ngày 1/1/2025, chủ tài khoản ngân hàng đều phải đăng ký sinh trắc học nếu muốn rút tiền hoặc chuyển tiền online</strong>. Đây là một bước nâng cao so với quy định bắt buộc phải xác thực sinh trắc học khi chuyển tiền từ trên 10 triệu đồng/lần và 20 triệu đồng/ngày theo Quyết định 2345 của NHNN có hiệu lực từ 1/7/2024.</p>
+                            <p>Thông tư 18 cũng quy định mức rút ngoại tệ tiền mặt tại nước ngoài một thẻ được rút tối đa tương đương 30 triệu đồng trong một ngày. Đối với thẻ tín dụng, tổng hạn mức rút tiền mặt tính theo BIN của thẻ tín dụng tối đa là 100 triệu đồng trong 1 tháng.</p>
+                            <p>Bên cạnh đó, hạn mức thẻ tín dụng đối với cá nhân có tài sản bảo đảm tối đa là 1 tỷ đồng. Trường hợp không có tài sản bảo đảm, hạn mức tín dụng cấp cho chủ thẻ tối đa là 500 triệu đồng.</p>
+                            <p>Thông tư 18 còn quy định một số trường hợp trong thu hồi thẻ như thẻ giả, thẻ sử dụng trái phép, phục vụ công tác điều tra, xử lý tội phạm theo quy định của pháp luật, các trường hợp thu hồi thẻ khác được thỏa thuận tại hợp đồng phát hành và sử dụng thẻ.</p>
+                            <h4 class="author">Thủy Tiên (TH)</h4>
+                            <h4 class="magazine">Người đưa tin</h4>
+                            <div class="source-wrapper">
+                                <button class="source-name">
+                                    Theo
+                                    <span>Người đưa tin</span>
+                                </button>
+                                <div class="displayMsg">
+                                    <div class="alertMsg"></div>
+                                    <div class="source-link">
+                                        https://doisongphapluat.nguoiduatin.vn/tu-1-1-2025-tai-khoan-ngan-hang-chua-xac-thuc-khong-the-giao-dich-online-a461133.html
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                        <div class="otherNews">
+                            <h2>Đọc thêm những tin tức mới nhất</h4>
+                            <div class="line"></div>
+                            <div class="headlineWrapper">
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-1/headline.png" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Hàng triệu người có tài khoản ngân hàng lưu ý: Nếu nghi ngờ lộ thông tin, chủ động nhập sai mật khẩu 5 lần để giữ tiền</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-2/headline.png" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Thị trường vàng liệu có tạm yên sau những ngày biến động mạnh?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-3/headline.jpg" alt="news1">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Bất ngờ về tốc độ cho vay của các ngân hàng ở TP HCM</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="headlineItem">
+                                    <div class="headlineDetails">
+                                        <a href="#">
+                                            <div class="headlineImage">
+                                                <img src="images/news/news-4/img1.jpg" alt="news2">
+                                            </div>
+                                            <div class="headlineDetail">
+                                                <h3>Rộ dịch vụ bán tiền seri đẹp theo ngày sinh với giá cao ngất: Có phạm luật?</h3>
+                                                <p>01/09/2024</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding"></div>
+                    </div>
+                </div>
+                <div class="closeButton" id="closeBtn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="events"> 
+            <h2>Sự kiện HOT tại DHBank</h2>  
+            <div class="eventsWrapper flex">
+                <div class="eventsItem">
+                    <div class="eventsDetails">
+                        <div class="eventsImage">
+                            <img src="images/banner/phone-about-bg3.png" alt="event1">
+                        </div>
+                        <div class="eventsText">
+                            <h3>Ưu đãi dành cho khách hàng mới</h3>
+                            <p>01/09/2024 <span>&#8901; Ưu đãi</span></p>
+                            <p>DHBank tặng bạn mới hàng ngàn bộ quà, ưu đãi và cơ hội trúng nhiều giải thưởng giá trị khi tham gia sự kiện. Đừng bỏ lỡ!!! </p> 
+                        </div>
+                        <div class="button"><a href="event-1.html">Xem chi tiết ></a></div>
+                    </div>
+                </div>
+                <div class="eventsItem">
+                    <div class="eventsDetails">
+                        <div class="eventsImage">
+                            <img src="images/banner/phone-about-bg4.png" alt="event2">
+                        </div>
+                        <div class="eventsText">
+                            <h3>Cuộc thi Phân tích Đầu tư</h3>
+                            <p>31/08/2024 &#8901; Sự kiện - Tài chính</p>
+                            <p>Chặng 1 đã kết thúc, các thí sinh đã thể hiện tài năng phân tích thị trường rất hay tại cuộc thi.</p> 
+                        </div>
+                        <div class="button"><a href="event-2.html">Xem chi tiết ></a></div>
+                    </div>
+                </div>
+                <div class="eventsItem">
+                    <div class="eventsDetails">
+                        <div class="eventsImage">
+                            <img src="images/banner/phone-about-bg5.png" alt="event3">
+                        </div>
+                        <div class="eventsText">
+                            <h3>Mái Trường Tình Nguyện</h3>
+                            <p>30/08/2024 &#8901; Sự kiện - Tình nguyện </p>
+                            <p>Hãy giúp chúng tôi mang theo những phần quà ấm áp đến với các em cho mùa đông sắp tới! </p> 
+                        </div>
+                        <div class="button"><a href="event-3.html">Xem chi tiết ></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us">
+            <h2>Bảo mật, an toàn cùng với DHBank, đăng ký ngay hôm nay!</h2>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-about flex">
+            <div class="cskh">
+                <div class="guest">
+                    <p>Chăm sóc khách hàng</p>
+                    <h4>Địa chỉ: Khu dân cư Nhơn Đức, Nhà Bè, TP.HCM</h4>
+                    <h4>Hotline: 1988 8888 88</h4>
+                    <h4>Email: cskh@dhb.vn</h4>
+                </div>
+                <div class="business">
+                    <p>Liên hệ doanh nghiệp</p>
+                    <h4>Hotline: 1977 7777 77</h4>
+                    <h4>Email: business-care@dhb.vn</h4>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="app-contacts">
+                    <p>Kết nối với chúng tôi</p>
+                    <a href="#facebook"><img src="images/icon/social/facebook.png" alt="Facebook"/></a>
+                    <a href="#youtube"><img src="images/icon/social/youtube.png" alt="Youtube"></a>
+                    <a href="#discord"><img src="images/icon/social/discord.jpg" alt="Discord"></a>
+                </div>
+                <p>&copy;DHB Corporate 2000</p>
+            </div>
+        </div>
+        <div class="footer-icon flex">
+            <div class="icon flex">
+                <a href="https://www.freepik.com/"><img src="images/icon/logo.png" alt="Designed by Freepik"></a>
+                <h1>DHBank<span> - DHB Corporate product since 2000</span></h1>
+            </div>
+            <div></div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+.nav-menu {
+    justify-content: space-between;
+}
+
+/* --- Khung bên trái --- */
+
+.left {
+    width: 40%;
+    height: 50vw;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.accountWrapper {
+    width: 80%;
+    height: 80%;
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.accountWrapper h1 {
+    font-size: 3rem;
+}
+
+.accountWrapper form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.accountWrapper form div p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: grey;
+}
+
+.accountWrapper form input {
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    border-bottom: 1px solid #ccc   ;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.accountWrapper form button {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accountWrapper form input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    display: inline;
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    overflow: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checkbox div {
+    margin-left: 5px;
+}
+
+/* Đăng nhập */
+
+.loginWrapper {
+    display: block;
+    animation: fade-in 1s ease;
+}
+
+.loginWrapper form a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Đăng ký */
+
+.registerWrapper {
+    display: none;
+}
+
+.registerWrapper form {
+    display: none;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.registerWrapper .sorryMessage {
+    display: none;
+    margin-top: 2rem;
+}
+
+.registerWrapper .sorryMessage p {
+    margin-bottom: 1rem;
+}
+
+/* Đăng ký thất bại */
+
+.socialWrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
+.socialWrapper .social {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid cadetblue;
+    color: cadetblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.socialWrapper img {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* Quên mật khẩu */
+
+.forgotPasswordWrapper {
+    display: none;
+}
+
+.successMessage {
+    display: none;
+}
+
+.successMessage p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: green !important;
+}
+
+/* Những nút chuyển đổi */
+
+.revert {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.register span,
+.login span,
+.sorryRevert span {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.register span:hover,
+.login span:hover {
+    scale: 1.02;
+}
+
+.register span:active,
+.login span:active {
+    scale: 0.98;
+}
+
+.register {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.login {
+    display: none;
+    font-size: 0.8rem;
+}
+
+/* --- Trình chiếu bên phải --- */
+.right {
+    width: 60%;
+    height: 50vw;   
+    position: relative;
+}
+
+.showcaseWrapper {
+    width: 100%;
+    height: 100% !important;
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcaseSlides {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.showcaseSlides li {
+    margin: 0;
+    padding: 0;
+}
+
+.showcaseSlides img {
+    height: 50vw;
+    object-fit:contain;
+}
+
+.slidenav {
+    height: 50vw;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.slidenav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 50vw;
+    cursor: pointer;
+    color: white;
+}
+
+.scSlide {
+    display:none;
+}
+
+.scSlide.scActive {
+    display: flex;
+    animation: fade-in 1s ease-in-out;
+}
+
+.slidenav div:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    animation: fade-in 300ms ease-in-out;
+}
+
+/* --- Ẩn popup cho đt --- */
+
+.under {
+    display: none;
+}
+
+/* --- Footer --- */
+
+.footer-icon {
+    background-color: white;
+}
+
+.footer-icon .icon h1 {
+    color: darkblue;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        position: relative;
+    }
+    main {
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        height: max-content;
+    }
+    .accountWrapper {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .revert {
+        top: auto;
+        right: auto;
+        left: 2rem;
+        bottom: 0;
+    }
+    .right {
+        display: none;
+    }
+    .under {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background-color: aquamarine;
+    }
+    .popupWrapper {
+        height: 100px;
+        width: 100%;
+        position: relative;
+    }
+    .popupSlides {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .popupSlides img {
+        width: 100vw;
+    }
+    .popupSlide {
+        display: none;
+        animation: fade-in 1s ease-in-out;
+    }
+    .popupSlide.popActive {
+        display: flex;
+    }
+    #closePopUp {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 2rem;
+        color: white;
+    }
+}

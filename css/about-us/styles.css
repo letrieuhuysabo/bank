@@ -1,0 +1,407 @@
+.padding {
+    height: 5vw;
+}
+
+/* --- Thanh điều hướng --- */
+
+.scrollToTop {
+    position: fixed;
+    cursor: pointer;
+    bottom: 30px;
+    right: 60px;
+    z-index: 99;
+    opacity: 0;
+}
+
+.breadcrumbs {
+    padding: 1rem;
+    width: 65%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.breadcrumb_item a {
+    display: inline-block;
+    color: grey;
+}
+
+.breadcrumb_item::after {
+    content: '>';
+    margin: 1rem;
+    color: gray;
+}
+
+.breadcrumb_item:first-child {
+    content: none;
+}
+
+.breadcrumb_item a:hover {
+    color: black;
+    transform: translate(0, -2px);
+}
+
+/* Hiện ảnh ra toàn màn hình */
+.showImgRewards{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+.showImgRewards>div:first-child{
+    position: fixed;
+    top:2%;
+    right:32%;
+    z-index: 99999;
+    color: white;
+    font-size: 3vw;
+    cursor: pointer;
+}
+.showImgRewards>div:last-child{
+    position: fixed;
+    width: 30%;
+    top:10%;
+    left: 35%;
+    z-index: 99999;
+}
+.showImgRewards img{
+    width: 100%;
+}
+
+
+/* header */
+.header{
+    width: 100%;
+    height: max-content;
+    position: relative;
+    margin-bottom: 5vw;
+}
+.header>img{
+    width: 100%;
+    height: 100%;
+}
+.altHeaderImg {
+    display: none;
+}
+.header>div{
+    position: absolute;
+    font-size: 5vw;
+    color:#ffbd59;
+    top:15%;
+    left:5%;
+}
+/* section */
+section{
+    width: 80%;
+    margin: 5vw auto;
+}
+
+section p {
+    font-size: 1.2vw;
+    margin: 2vw 0;
+    line-height: 2vw;
+}
+/* Tiêu đề của section */
+section>div:first-child{
+    font-size: 2.2vw;
+}
+/* Đoạn văn thông tin của section */
+section>p:nth-child(2){
+    font-size: 1.2vw;
+    margin: 2vw 0;
+}
+/* Tầm nhìn và sứ mệnh */
+.TamNhin_SuMenh{
+    height: 50vw;
+    position: relative;
+}
+#contentTamNhin_SuMenh{
+    width: 80%;
+    height: 100%;
+    margin: 2vw auto;
+    border-radius: 2vw;
+    position: relative;
+}
+#contentTamNhin_SuMenh>div{
+    height: 100%;
+}
+#contentTamNhin_SuMenh img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2vw;
+}
+.blackShadow{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0%;
+    background: linear-gradient(rgba(255, 254, 254, 0),rgba(0, 0, 0, 1));
+    z-index: 999;
+    border-radius: 0 0 2vw 2vw;
+}
+.blackShadow>div{
+    position: absolute;
+    top:10vw;
+    width: 20%;
+    left: 40%;
+    color: white;
+    font-size: 2.5vw;
+}
+.blackShadow>p{
+    font-size: 1.5vw;
+    position: absolute;
+    bottom:2vw;
+    color: white;
+    width: 92%;
+    left: 4%;
+}
+/* Nút chuyển qua lại giữa tầm nhìn và giá trị */
+.switch{
+    position: absolute;
+    font-size: 2vw;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 2px 2px 0px black;
+    top:2%;
+    right: 5%;
+}
+.TamNhin_SuMenh .dots {
+    display: flex;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 10px;
+}
+/* Các giá trị cốt lõi */
+.GiaTri{
+    margin-top: 10vw;
+}
+.values{
+    position: relative;
+    height: 60vw;
+    width: 60vw;
+    margin: auto;
+}
+#centralCircle{
+    position: absolute;
+    background-color: darkblue;
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+    top:30%;
+    left:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#centralCircle p {
+    font-size:3vw;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.value{
+    width: 24%;
+    height: 24%;
+    background-color: lightblue;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7vw;
+    padding: 1vw;
+    box-sizing: border-box;
+    transition: transform ease 0.3s;
+}
+.value:hover{
+    background-color:cornflowerblue;
+    transform: scale(1.1);
+}
+.value:hover + div{
+    display: block;
+    animation: svc ease 0.5s;  
+}
+/* Vị trí các ô tròn */
+#value1{
+    top:10%;
+    left:18%;
+}
+#value2{
+    top:38%;
+    left:3%;
+}
+#value3{
+    bottom:10%;
+    left:18%;
+}
+#value4{
+    bottom:10%;
+    right: 18%;
+}
+#value5{
+    top:38%;
+    right:3%;
+}
+#value6{
+    top:10%;
+    right:18%;
+}
+.contentOfValue{
+    position: absolute;
+    width: 18vw;
+    font-size: 1.4vw;
+    background-color: cadetblue;
+    color:white;
+    border-radius: 1vw;
+    padding: 1vw;
+    box-sizing: border-box;
+    display: none;
+}
+/* vị trí các content values */
+#value1 + .contentOfValue{
+    position: absolute;
+    top:12%;
+    left: -15%;
+    text-align: end;
+}
+#value2 + .contentOfValue{
+    position: absolute;
+    top:40%;
+    left: -30%;
+    text-align: end;
+}
+#value3 + .contentOfValue{
+    position: absolute;
+    bottom: 10%;
+    left: -15%;
+    text-align: end;
+}
+#value4 + .contentOfValue{
+    position: absolute;
+    bottom: 10%;
+    right: -15%;
+    text-align: start;
+}
+#value5 + .contentOfValue{
+    position: absolute;
+    top:40%;
+    right: -30%;
+    text-align: start;
+}
+#value6 + .contentOfValue{
+    position: absolute;
+    top:12%;
+    right: -15%;
+    text-align: start;
+}
+
+.showValueContent{
+    animation: svc ease 0.5s;  
+}
+@keyframes svc{
+    from{font-size: 0;}
+    to{font-size: 1.4vw;} 
+}
+.hideValueContent{
+    animation: hvc ease 0.5s;  
+}
+@keyframes hvc{
+    from{font-size: 1.4vw;}
+    to{font-size:0;}
+}
+/* Thành tựu */
+.NhungThanhTuu>div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+}
+.NhungThanhTuu>div:nth-child(2)>div{
+    width: 33%;
+    height: 35vw;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+.ThanhTuu{
+    position: relative;
+}
+.ThanhTuu>img{
+    width: 100%;
+    border-radius: 4vw;
+}
+.ThanhTuu>div{
+    position: absolute;
+    top:1vw;
+    width: 80%;
+    left:10%;
+    font-size: 1.7vw;
+    text-align: center;
+}
+.ThemThanhTuu{
+    font-size: 1.6vw;
+    margin-left: 2vw;
+}
+#xemThemButton{
+    cursor: pointer;
+}
+#xemThemButton:hover{
+    color: violet;
+}
+.ThemThanhTuu>div>div{
+    margin: 3vw;
+}
+/* Quy Mô */
+.QuyMo{
+    height: 16vw;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 4vw;
+}
+.QuyMo>div:first-child{
+    background-color: #84b4e4;
+    padding-top: 2vw;
+    text-align: center;
+}
+.QuyMo>div:nth-child(2){
+    background-color: #84b4e4;
+    height: 100%;
+    background-image: url("images/world_map.jpg");
+    background-size: 40%;
+    background-position-x: right;
+    background-position-y:center;
+    background-repeat: no-repeat;
+}
+.NhungThongSo{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    /* justify-content: center; */  
+    align-items: flex-start;
+    width: 60%;
+    height: 100%;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+.NhungThongSo>div{
+    width: 33%;
+}
+.NhungThongSo>div>div:first-child{
+    font-size: 1.1vw;
+}
+.NhungThongSo>div>div:last-child{
+    font-size: 3vw;
+}
+.hidden{
+    visibility: hidden;
+}
+.displayNone{
+    display: none;
+}
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/login/styles.css">
+    <link rel="icon" href="images/icon/favicon/favicon.ico">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <div class="preloader">
+        <img src="images/icon/logo.png" alt="">
+    </div>
+    <nav>
+        <div class="nav-menu flex">
+            <div class="icon flex">
+                <a href="https://www.freepik.com/"><img src="images/icon/logo.png" alt="Designed by Freepik"></a>
+                <h1><a href="index.html">DHBank</a></h1>
+            </div>
+            <div><a href="index.html"><i class="fa-solid fa-house"></i></a></div>
+        </div>                                          
+    </nav>
+    <main class="flex">
+        <div class="left">
+            <div class="accountWrapper">
+                <div class="revert">
+                    <div class="register">Chưa có tài khoản? <span id="register">Đăng ký ngay</span></div>
+                    <div class="login">Đã có tài khoản? <span id="login">Đăng nhập</span></div>
+                </div>
+                <div class="loginWrapper">
+                    <h1>Đăng nhập</h1>
+                    <form name="login" onsubmit="return validateLogin()">
+                        <div>
+                            <p>Email:</p>
+                            <input id="accountLogin" name="account" type="mail" placeholder="Nhập email" required>
+                        </div>
+                        <div>
+                            <p>Mật khẩu:</p>
+                            <input id="passwordLogin" type="password" placeholder="Nhập mật khẩu" required>
+                        </div>
+                        <div class="checkbox">
+                            <input name="logincheckbox" id="checkBoxDK" type="checkbox" required>
+                            <div> Tôi không phải là người máy</div>
+                        </div>
+                        <button type="submit">Đăng nhập</button>
+                        <a id="forgotPassword">Quên mật khẩu?</a>
+                    </form>
+                </div>
+                <div name="register" class="registerWrapper">
+                    <h1>Đăng ký</h1>
+                    <form name="register" onsubmit="return validateRegister()">
+                        <div>
+                            <p>Email:</p>
+                            <input id="accountRegister" name="account" type="mail" placeholder="Nhập email" required>
+                        </div>
+                        <div>
+                            <p>Họ và tên:</p>
+                            <input id="accountNameRegister" name="accountName" type="text" placeholder="Nhập họ và tên" required>
+                        </div>
+                        <div>
+                            <p>Mật khẩu:</p>
+                            <input id="passwordRegister" name="password" type="password" placeholder="Nhập mật khẩu" required>
+                        </div>
+                        <div>
+                            <p>Xác nhận mật khẩu:</p>
+                            <input id="confirmPasswordRegister" name="confirmPassword" type="password" placeholder="Xác nhận mật khẩu" required>
+                        </div>
+                        <div for="checkbox" class="checkbox">
+                            <input name="checkbox" id="checkBox" type="checkbox" required>
+                            Tôi đã đọc và đồng ý với Điều khoản Thỏa thuận Dịch vụ của DHBank
+                        </div>
+                        <button type="submit">Đăng ký</button>
+                    </form>
+                    <div class="sorryMessage">
+                        <p>Tạm thời chưa thể đăng ký. Vui lòng liên hệ với quản trị viên để đăng ký.</p>
+                        <p>Xin lỗi vì sự cố này.</p>
+                        <div class="socialWrapper">
+                            <a class="social" href="mailto:admin@dhb.vn"><i class="fa-solid fa-envelope"></i></a>
+                            <img src="images/icon/social/facebook.png" alt="Facebook">
+                            <img src="images/icon/social/youtube.png" alt="YouTube">
+                            <img src="images/icon/social/discord.jpg" alt="Discord">
+                        </div>
+                        <p class="sorryRevert"><span id="loginAlt">Quay về trang Đăng nhập</span></p>
+                    </div>
+                </div>
+                <div class="forgotPasswordWrapper">
+                    <h1>Quên mật khẩu</h1>
+                    <form name="forgotPassword" onsubmit="return validateForgotPassword()">
+                        <div class="account">
+                            <p>Email:</p>
+                            <input id="accountForgot" type="mail" placeholder="Nhập email">
+                        </div>
+                        <div class="successMessage">
+                            <p>Chúng tôi đã gửi yêu cầu thành công. Vui lòng kiểm tra email của bạn để tiến hành đặt lại mật khẩu.</p>
+                        </div>
+                        <button type="submit">Gửi yêu cầu</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="showcaseWrapper">
+                <ul class="showcaseSlides">
+                    <li class="scSlide scActive"><img src="images/login/1.png" alt="service1"></li>
+                    <li class="scSlide"><img src="images/login/2.png" alt="service2"></li>
+                    <li class="scSlide"><img src="images/login/3.png" alt="service3"></li>
+                    <li class="scSlide"><img src="images/login/4.png" alt="service4"></li>
+                    <li class="scSlide"><img src="images/login/5.png" alt="service5"></li>
+                    <li class="scSlide"><img src="images/login/6.png" alt="service6"></li>
+                    <li class="scSlide"><img src="images/login/7.png" alt="service7"></li>
+                    <li class="scSlide"><img src="images/login/8.png" alt="service8"></li>
+                </ul>
+            </div>
+            <div class="slidenav flex">
+                <div id="prev">&#10094;</div>
+                <div id="next">&#10095;</div>
+            </div>
+        </div>
+        <div class="under">
+            <div class="popupWrapper">
+                <ul class="popupSlides">
+                    <li class="popupSlide popActive"><img src="images/banner/about-bg3.png" alt="Sự kiện 1"></li>
+                    <li class="popupSlide"><img src="images/banner/about-bg4.png" alt="Sự kiện 2"></li>
+                    <li class="popupSlide"><img src="images/banner/about-bg5.png" alt="Sự kiện 3"></li>
+                </ul>
+                <div id="closePopUp">
+                    <i class="fa-solid fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-icon flex">
+            <div class="icon flex">
+                <a href="https://www.freepik.com/"><img src="images/icon/logo.png" alt="Designed by Freepik"></a>
+                <h1>DHBank<span> - DHB Corporate product since 2000</span></h1>
+            </div>
+            <div></div>
+        </div>
+    </footer>
+    <script src="js/login/scripts.js"></script>
+</body>
+</html>

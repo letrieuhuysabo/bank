@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="DHB, Bank, DHB Bank, Thiet ke Web, HTML, CSS, JS, FAQ, Cau hoi, Tro giup, Giup do, Ho tro">
+    <meta name="author" content="Truong Van Dzung, Le Trieu Huy">
+    <link rel="icon" href="images/icon/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/faq/styles.css">
+    <title>Các câu hỏi thường gặp</title>
+</head>
+<body>
+    <div class="preloader">
+        <img src="images/icon/logo.png" alt="">
+    </div>
+    <nav>
+        <div class="nav-menu flex">
+            <div class="icon flex">
+                <a href="https://www.freepik.com/"><img src="images/icon/logo.png" alt="Designed by Freepik"></a>
+                <h1><a href="index.html">DHBank</a></h1>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="requests.html">Gửi phiếu hỗ trợ</a></li>
+            </ul>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="drop-down menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="requests.html">Gửi phiếu hỗ trợ</a></li>
+                </ul>
+            </div>
+        </div>                                          
+    </nav>
+    <div class="scrollToTop" type="button">
+        <div class="border">
+            <p>&uarr;</p>
+        </div>  
+    </div>
+    <nav>
+        <ul class="breadcrumbs">
+            <li class="breadcrumb_item">
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="breadcrumb_item">
+                <a href="faq.html">Trợ giúp</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="banner">
+        <h1>TRUNG TÂM TRỢ GIÚP</h1>
+        <div class="search">
+            <form onsubmit="return search()">
+                <input type="text" placeholder="Chào bạn, DHBank có thể giúp gì được cho bạn?" id="searchInput">
+                <button type="submit"><i class="fa-solid fa-search"></i></button>
+            </form>
+        </div>
+    </section>
+    <section class="faqWrapper">
+        <h1>CÂU HỎI THƯỜNG GẶP</h1>
+        <div class="faq faqActive">
+            <div class="question">
+                <h3>Làm thế nào để mở một tài khoản ngân hàng?</h3>
+                <div class="faq_dropdown">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="answer">
+                <p>Bước 1: Lựa chọn chi nhánh/ phòng giao dịch của ngân hàng; Bước 2: Cung cấp chứng minh thư hoặc căn cước công dân cho giao dịch viên của ngân hàng; Bước 3: Điền đầy đủ các thông tin cần thiết vào biểu mẫu đăng ký mở tài khoản; Bước 4: Ngân hàng gửi thông tin kích hoạt tài khoản cho bạn.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <h3>Làm thế nào để xin cấp một chiếc thẻ ATM?</h3>
+                <div class="faq_dropdown">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="answer">
+                <p>Bạn hãy đến phòng giao dịch ngân hàng gần nhất và yêu cầu giao dịch viên mở tài khoản ngân hàng mở thẻ ATM hoặc mở thẻ Online và hẹn lấy tại quầy</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <h3>Mở tài khoản có mất phí không?</h3>
+                <div class="faq_dropdown">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="answer">
+                <p>Hiện nay, đa số ngân hàng đều miễn phí mở tài khoản. Thế nhưng đối với DHBank, bạn có thể sẽ mất thêm 1 khoản phí nhỏ từ 50.000đ - 100.000đ để nạp tiền tạo số dư tối thiểu duy trì tài khoản.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <h3>Có những loại tài khoản ngân hàng nào?</h3>
+                <div class="faq_dropdown">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="answer">
+                <p>Có nhiều loại tài khoản khác nhau phù hợp với nhu cầu và tình trạng tài chính của mỗi người. Dưới đây là một số loại ngân hàng phổ biến nhất:</p>
+                <p>1: Tài khoản tiết kiệm; 2. Tài khoản thanh toán; 3: Tài khoản vay; 4: Tài khoản tiền gửi có kỳ hạn; 5: Tài khoản thanh toán quốc tế; 6: Tài khoản cho doanh nghiệp</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <h3>Nếu thẻ ATM bị mất hoặc bị hỏng, tôi phải làm gì?</h3>
+                <div class="faq_dropdown">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="answer">
+                <p>Bước 1: Đến chi nhánh hoặc phòng giao dịch ngân hàng phát hành thẻ đã mất và mang theo CMND hoặc CCCD còn hạn sử dụng. Bước 2: Thông báo với giao dịch viên về tình huống mất thẻ và mong muốn làm lại thẻ mới. Bước 3: Cung cấp CMND hoặc CCCD còn hạn sử dụng và điền đầy đủ thông tin vào đơn làm lại thẻ.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <h3>Tôi cần có những điều kiện gì để được vay vốn?</h3>
+                <div class="faq_dropdown">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="answer">
+                <p>1. Khách hàng là pháp nhân có năng lực pháp luật dân sự theo quy định của pháp luật. Khách hàng là cá nhân từ đủ 18 tuổi trở lên có năng lực hành vi dân sự đầy đủ theo quy định của pháp luật hoặc từ đủ 15 tuổi đến chưa đủ 18 tuổi không bị mất hoặc hạn chế năng lực hành vi dân sự theo quy định của pháp luật.;
+                    2. Nhu cầu vay vốn để sử dụng vào mục đích hợp pháp.;
+                    3. Có phương án sử dụng vốn khả thi.;
+                    4. Có khả năng tài chính để trả nợ.;
+                    5. Trường hợp khách hàng vay vốn của tổ chức tín dụng theo lãi suất cho vay quy định tại khoản 2 Điều 13 Thông tư này, thì khách hàng được tổ chức tín dụng đánh giá là có tình hình tài chính minh bạch, lành mạnh.</p>
+            </div>
+        </div>
+    </section>
+    <section class="faqCommon">
+        <h1>CÂU HỎI ĐƯỢC QUAN TÂM NHIỀU NHẤT</h1>
+        <div class="faqCommonWrapper">
+            <a href="about-us.html">
+                <div class="faqItemWrapper">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <h2>DHB là gì?</h2>
+                    <h3>Ngân hàng DHB là một tổ chức tài chính uy tín, nổi bật với sự đổi mới. ới đội ngũ nhân viên chuyên nghiệp và hệ thống công nghệ tiên tiến, ngân hàng DHB cam kết mang lại giá trị cao nhất cho khách hàng. </h3>
+                </div>
+            </a>
+            <a href="#contact">
+                <div class="faqItemWrapper">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <h2>Cách liên hệ với DHB</h2>
+                    <h3>Bạn có thể liên lạc với bộ phận Chăm Sóc Khách Hàng (CSKH) qua MXH của DHB, gửi email tới cskh@dhb.vn hoặc gửi phiếu hỗ trợ để nhận được phản hồi nhanh nhất. </h3>
+                </div>
+            </a>
+            <a href="recruit.html">
+                <div class="faqItemWrapper">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <h2>Tuyển dụng</h2>
+                    <h3>Nếu bạn có khả năng phân tích sắc bén và đam mê với ngành tài chính, hãy ứng tuyển ngay hôm nay để cùng chúng tôi tạo nên những giải pháp tài chính tối ưu cho khách hàng.</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="contact-us" id="contact">
+        <div class="contactWrapper flex">
+            <div class="contactFlex">
+                <h2>Liên hệ với chúng tôi</h2>
+                <p>Bạn đang gặp khó khăn cần được hỗ trợ hay cần đóng góp ý kiến cho bộ phận khách hàng? Hãy liên hệ với DHBank qua bộ phận chăm sóc khách hàng. Chúng tôi sẽ giải quyết vấn đề của bạn nhanh nhất có thể !</p>
+                <div class="contactDetail">
+                    <div class="contactChild">
+                        <p>Yêu cầu trợ giúp tại</p>
+                        <a href="requests.html">
+                            <button>
+                                <p>Gửi phiếu hỗ trợ</p>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="contactChild">
+                        <p>Liên hệ qua MXH</p>
+                        <div>
+                            <a href="#facebook"><img src="images/icon/social/facebook.png" alt="Facebook"></a>
+                            <a href="#youtube"><img src="images/icon/social/youtube.png" alt="youtube"></a>
+                            <a href="#discord"><img src="images/icon/social/discord.jpg" alt="Discord"></a>
+                        </div>
+                    </div>
+                    <div class="contactChild">
+                        <p>Email hỗ trợ</p>
+                        <a href="mailto:cskh@dhb.vn">cskh@dhb.vn</a>
+                    </div>
+                </div>        
+            </div>
+            <div class="contactImg">
+                <i class="fa-solid fa-clipboard-question"></i>
+            </div>
+        </div>
+        <div class="contactHome">
+            <a href="index.html">
+                <button>
+                    <p>Tìm hiểu thêm ></p>
+                </button>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-about flex">
+            <div class="homenav">
+                <ul>
+                    <li><a href="about-us.html">Về DHB</a></li>
+                    <li><a href="index.html#services">Dịch vụ</a></li>
+                    <li><a href="index.html#news">Tin tức</a></li>
+                    <li><a href="recruit.html">Tuyển dụng</a></li>
+                    <li><a href="login.html">Đăng nhập</a></li>
+                </ul>
+            </div>
+            <div class="cskh">
+                <div class="guest">
+                    <p>Chăm sóc khách hàng</p>
+                    <h4>Địa chỉ: Khu dân cư Nhơn Đức, Nhà Bè, TP.HCM</h4>
+                    <h4>Hotline: 1988 8888 88</h4>
+                    <h4>Email: cskh@dhb.vn</h4>
+                </div>
+                <div class="business">
+                    <p>Liên hệ doanh nghiệp</p>
+                    <h4>Hotline: 1977 7777 77</h4>
+                    <h4>Email: business-care@dhb.vn</h4>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="app-contacts">
+                    <p>Kết nối với chúng tôi</p>
+                    <a href="#facebook"><img src="images/icon/social/facebook.png" alt="Facebook"/></a>
+                    <a href="#youtube"><img src="images/icon/social/youtube.png" alt="Youtube"></a>
+                    <a href="#discord"><img src="images/icon/social/discord.jpg" alt="Discord"></a>
+                </div>
+                <p>&copy;DHB Corporate 2000</p>
+            </div>
+        </div>
+        <div class="footer-icon flex">
+            <div class="icon flex">
+                <a href="https://www.freepik.com/"><img src="images/icon/logo.png" alt="Designed by Freepik"></a>
+                <h1>DHBank<span> - DHB Corporate product since 2000</span></h1>
+            </div>
+            <div></div>
+        </div>
+    </footer>
+    <script src="js/faq/scripts.js"></script>
+</body>
+</html>
